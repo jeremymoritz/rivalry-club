@@ -12,6 +12,9 @@
       "AmplifyAppId": "d2ij2nswvyg5v3"
     },
     "categories": {
+      "auth": {
+        "rivalryclub4c982639": {}
+      },
       "api": {
         "rivalryclub": {}
       }
