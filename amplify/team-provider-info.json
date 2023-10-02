@@ -10,6 +10,11 @@
       "StackName": "amplify-rivalryclub-staging-235723",
       "StackId": "arn:aws:cloudformation:us-east-1:728935397829:stack/amplify-rivalryclub-staging-235723/446729b0-60b6-11ee-9f13-0ab1259394c7",
       "AmplifyAppId": "d2ij2nswvyg5v3"
+    },
+    "categories": {
+      "api": {
+        "rivalryclub": {}
+      }
     }
   }
 }
