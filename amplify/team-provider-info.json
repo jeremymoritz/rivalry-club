@@ -1,0 +1,15 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-rivalryclub-staging-235723-authRole",
+      "UnauthRoleArn": "arn:aws:iam::728935397829:role/amplify-rivalryclub-staging-235723-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::728935397829:role/amplify-rivalryclub-staging-235723-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-rivalryclub-staging-235723-deployment",
+      "UnauthRoleName": "amplify-rivalryclub-staging-235723-unauthRole",
+      "StackName": "amplify-rivalryclub-staging-235723",
+      "StackId": "arn:aws:cloudformation:us-east-1:728935397829:stack/amplify-rivalryclub-staging-235723/446729b0-60b6-11ee-9f13-0ab1259394c7",
+      "AmplifyAppId": "d2ij2nswvyg5v3"
+    }
+  }
+}
