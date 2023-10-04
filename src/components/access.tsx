@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import type { PropsWithChildren } from 'react';
 import {
   Button,
@@ -20,7 +20,11 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 import UserList from '../components/user-list';
-import { Authenticator, useAuthenticator } from '@aws-amplify/ui-react-native';
+import { useAuthenticator } from '@aws-amplify/ui-react-native';
+import { usersByAwsSub } from '../graphql/queries';
+import { API } from 'aws-amplify';
+import { GraphQLQuery } from '@aws-amplify/api';
+import { UsersByAwsSubQuery, User } from '../API';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -53,57 +57,74 @@ function Section({ children, title }: SectionProps): JSX.Element {
 }
 
 function SignOutButton(): JSX.Element {
-  const { user, signOut } = useAuthenticator();
-
-  console.warn({ amplifyUser: user });
+  const { signOut } = useAuthenticator();
 
   return <Button title="Sign Out" onPress={signOut} />;
 }
 
 function Access(): JSX.Element {
+  const [user, setUser] = useState<User | null>(null);
   const isDarkMode = useColorScheme() === 'dark';
+
+  const { user: amplifyUser } = useAuthenticator();
+
+  async function fetchAndSetUserByAwsSub(awsSub: string): Promise<void> {
+    const queryResult = await API.graphql<GraphQLQuery<UsersByAwsSubQuery>>({
+      query: usersByAwsSub,
+      variables: { awsSub },
+    });
+
+    const usersWithAwsSub = queryResult.data?.usersByAwsSub?.items;
+
+    if (!usersWithAwsSub?.length) return;
+
+    setUser(usersWithAwsSub[0]);
+  }
+
+  useEffect(() => {
+    if (!amplifyUser?.username) return;
+
+    fetchAndSetUserByAwsSub(amplifyUser.username);
+  }, [amplifyUser]);
+
+  console.warn({ amplifyUser });
 
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
 
   return (
-    <Authenticator.Provider>
-      <Authenticator>
-        <SafeAreaView style={backgroundStyle}>
-          <StatusBar
-            barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-            backgroundColor={backgroundStyle.backgroundColor}
-          />
-          <ScrollView
-            contentInsetAdjustmentBehavior="automatic"
-            style={backgroundStyle}>
-            <Header />
-            <UserList />
-            <View
-              style={{
-                backgroundColor: isDarkMode ? Colors.black : Colors.white,
-              }}>
-              <SignOutButton />
-              <Section title="Step One">
-                Edit <Text style={styles.highlight}>App.tsx</Text> to change
-                this screen and then come back to see your edits.
-              </Section>
-              <Section title="See Your Changes">
-                <ReloadInstructions />
-              </Section>
-              <Section title="Debug">
-                <DebugInstructions />
-              </Section>
-              <Section title="Learn More">
-                Read the docs to discover what to do next:
-              </Section>
-              <LearnMoreLinks />
-            </View>
-          </ScrollView>
-        </SafeAreaView>
-      </Authenticator>
-    </Authenticator.Provider>
+    <SafeAreaView style={backgroundStyle}>
+      <StatusBar
+        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
+        backgroundColor={backgroundStyle.backgroundColor}
+      />
+      <ScrollView
+        contentInsetAdjustmentBehavior="automatic"
+        style={backgroundStyle}>
+        <Header />
+        <UserList />
+        <View
+          style={{
+            backgroundColor: isDarkMode ? Colors.black : Colors.white,
+          }}>
+          <SignOutButton />
+          <Section title="Welcome">
+            Welcome{user ? `, ${user.firstName}` : ''}!
+          </Section>
+          <Section title="See Your Changes">
+            <ReloadInstructions />
+          </Section>
+          <Section title="Debug">
+            <DebugInstructions />
+          </Section>
+          <Section title="Learn More">
+            Read the docs to discover what to do next:
+          </Section>
+          <LearnMoreLinks />
+        </View>
+      </ScrollView>
+    </SafeAreaView>
   );
 }
 
