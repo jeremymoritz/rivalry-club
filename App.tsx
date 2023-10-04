@@ -1,139 +1,32 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
+/** Rivalry App */
 
-import React from 'react';
-import type { PropsWithChildren } from 'react';
-import {
-  Button,
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
-
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-
+import React, { useState } from 'react';
 import { Amplify } from 'aws-amplify';
-import awsconfig from './src/aws-exports';
-Amplify.configure(awsconfig);
-import { Authenticator, useAuthenticator } from '@aws-amplify/ui-react-native';
+import awsConfig from './src/aws-exports';
+import Access from './src/components/access';
+import { ScrollView, Text, View } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { Button } from '@aws-amplify/ui-react-native/dist/primitives';
 
-type SectionProps = PropsWithChildren<{
-  title: string;
-}>;
-
-function Section({ children, title }: SectionProps): JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
-  return (
-    <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
-        {title}
-      </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
-      </Text>
-    </View>
-  );
-}
-
-import awsExports from './src/aws-exports';
-import UserList from './src/components/user-list';
-Amplify.configure(awsExports);
-
-function SignOutButton(): JSX.Element {
-  const { signOut } = useAuthenticator();
-  return <Button title="Sign Out" onPress={signOut} />;
-}
+Amplify.configure(awsConfig);
 
 function App(): JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
+  const [moveOn, setMoveOn] = useState<boolean>(false);
 
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
-  return (
-    <Authenticator.Provider>
-      <Authenticator>
-        <SafeAreaView style={backgroundStyle}>
-          <StatusBar
-            barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-            backgroundColor={backgroundStyle.backgroundColor}
-          />
-          <ScrollView
-            contentInsetAdjustmentBehavior="automatic"
-            style={backgroundStyle}>
-            <Header />
-            <UserList />
-            <View
-              style={{
-                backgroundColor: isDarkMode ? Colors.black : Colors.white,
-              }}>
-              <SignOutButton />
-              <Section title="Step One">
-                Edit <Text style={styles.highlight}>App.tsx</Text> to change
-                this screen and then come back to see your edits.
-              </Section>
-              <Section title="See Your Changes">
-                <ReloadInstructions />
-              </Section>
-              <Section title="Debug">
-                <DebugInstructions />
-              </Section>
-              <Section title="Learn More">
-                Read the docs to discover what to do next:
-              </Section>
-              <LearnMoreLinks />
-            </View>
-          </ScrollView>
-        </SafeAreaView>
-      </Authenticator>
-    </Authenticator.Provider>
+  return moveOn ? (
+    <Access />
+  ) : (
+    <SafeAreaView>
+      <ScrollView>
+        <View>
+          <Text>Rivalry Club is cool!</Text>
+          <Button onPress={() => setMoveOn(true)}>
+            Click here to continue
+          </Button>
+        </View>
+      </ScrollView>
+    </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-});
 
 export default App;

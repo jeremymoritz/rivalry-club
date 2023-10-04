@@ -2,6 +2,95 @@
 /* eslint-disable */
 //  This file was automatically generated and should not be edited.
 
+export type User = {
+  __typename: "User",
+  id: string,
+  email: string,
+  firstName?: string | null,
+  lastName?: string | null,
+  role: number,
+  awsSub: string,
+  createdAt: string,
+  updatedAt: string,
+  deletedAt?: string | null,
+  rivalriesA?: ModelRivalryConnection | null,
+  rivalriesB?: ModelRivalryConnection | null,
+  tierLists?: ModelTierListConnection | null,
+};
+
+export type ModelRivalryConnection = {
+  __typename: "ModelRivalryConnection",
+  items:  Array<Rivalry | null >,
+  nextToken?: string | null,
+};
+
+export type Rivalry = {
+  __typename: "Rivalry",
+  id: string,
+  userAId: string,
+  userBId: string,
+  gameId: string,
+  createdAt: string,
+  updatedAt: string,
+  deletedAt?: string | null,
+  contests?: ModelContestConnection | null,
+  tierLists?: ModelTierListConnection | null,
+};
+
+export type ModelContestConnection = {
+  __typename: "ModelContestConnection",
+  items:  Array<Contest | null >,
+  nextToken?: string | null,
+};
+
+export type Contest = {
+  __typename: "Contest",
+  id: string,
+  rivalryId: string,
+  tierSlotAId: string,
+  tierSlotBId: string,
+  result?: number | null,
+  bias?: number | null,
+  createdAt: string,
+  updatedAt: string,
+  deletedAt?: string | null,
+};
+
+export type ModelTierListConnection = {
+  __typename: "ModelTierListConnection",
+  items:  Array<TierList | null >,
+  nextToken?: string | null,
+};
+
+export type TierList = {
+  __typename: "TierList",
+  id: string,
+  rivalryId: string,
+  userId: string,
+  standing?: number | null,
+  createdAt: string,
+  updatedAt: string,
+  deletedAt?: string | null,
+  tierSlots?: ModelTierSlotConnection | null,
+};
+
+export type ModelTierSlotConnection = {
+  __typename: "ModelTierSlotConnection",
+  items:  Array<TierSlot | null >,
+  nextToken?: string | null,
+};
+
+export type TierSlot = {
+  __typename: "TierSlot",
+  id: string,
+  tierListId: string,
+  fighterId: string,
+  position?: number | null,
+  createdAt: string,
+  updatedAt: string,
+  deletedAt?: string | null,
+};
+
 export type CreateContestInput = {
   id?: string | null,
   rivalryId: string,
@@ -96,19 +185,6 @@ export type ModelStringInput = {
   size?: ModelSizeInput | null,
 };
 
-export type Contest = {
-  __typename: "Contest",
-  id: string,
-  rivalryId: string,
-  tierSlotAId: string,
-  tierSlotBId: string,
-  result?: number | null,
-  bias?: number | null,
-  createdAt: string,
-  updatedAt: string,
-  deletedAt?: string | null,
-};
-
 export type UpdateContestInput = {
   id: string,
   rivalryId?: string | null,
@@ -151,23 +227,6 @@ export type Fighter = {
   createdAt: string,
   updatedAt: string,
   tierSlots?: ModelTierSlotConnection | null,
-};
-
-export type ModelTierSlotConnection = {
-  __typename: "ModelTierSlotConnection",
-  items:  Array<TierSlot | null >,
-  nextToken?: string | null,
-};
-
-export type TierSlot = {
-  __typename: "TierSlot",
-  id: string,
-  tierListId: string,
-  fighterId: string,
-  position?: number | null,
-  createdAt: string,
-  updatedAt: string,
-  deletedAt?: string | null,
 };
 
 export type UpdateFighterInput = {
@@ -215,49 +274,6 @@ export type ModelFighterConnection = {
   __typename: "ModelFighterConnection",
   items:  Array<Fighter | null >,
   nextToken?: string | null,
-};
-
-export type ModelRivalryConnection = {
-  __typename: "ModelRivalryConnection",
-  items:  Array<Rivalry | null >,
-  nextToken?: string | null,
-};
-
-export type Rivalry = {
-  __typename: "Rivalry",
-  id: string,
-  userAId: string,
-  userBId: string,
-  gameId: string,
-  createdAt: string,
-  updatedAt: string,
-  deletedAt?: string | null,
-  contests?: ModelContestConnection | null,
-  tierLists?: ModelTierListConnection | null,
-};
-
-export type ModelContestConnection = {
-  __typename: "ModelContestConnection",
-  items:  Array<Contest | null >,
-  nextToken?: string | null,
-};
-
-export type ModelTierListConnection = {
-  __typename: "ModelTierListConnection",
-  items:  Array<TierList | null >,
-  nextToken?: string | null,
-};
-
-export type TierList = {
-  __typename: "TierList",
-  id: string,
-  rivalryId: string,
-  userId: string,
-  standing?: number | null,
-  createdAt: string,
-  updatedAt: string,
-  deletedAt?: string | null,
-  tierSlots?: ModelTierSlotConnection | null,
 };
 
 export type UpdateGameInput = {
@@ -386,7 +402,7 @@ export type CreateUserInput = {
   firstName?: string | null,
   lastName?: string | null,
   role: number,
-  awsSub?: string | null,
+  awsSub: string,
   createdAt?: string | null,
   updatedAt?: string | null,
   deletedAt?: string | null,
@@ -404,22 +420,6 @@ export type ModelUserConditionInput = {
   and?: Array< ModelUserConditionInput | null > | null,
   or?: Array< ModelUserConditionInput | null > | null,
   not?: ModelUserConditionInput | null,
-};
-
-export type User = {
-  __typename: "User",
-  id: string,
-  email: string,
-  firstName?: string | null,
-  lastName?: string | null,
-  role: number,
-  awsSub?: string | null,
-  createdAt: string,
-  updatedAt: string,
-  deletedAt?: string | null,
-  rivalriesA?: ModelRivalryConnection | null,
-  rivalriesB?: ModelRivalryConnection | null,
-  tierLists?: ModelTierListConnection | null,
 };
 
 export type UpdateUserInput = {
@@ -535,6 +535,12 @@ export type ModelUserFilterInput = {
   not?: ModelUserFilterInput | null,
 };
 
+export enum ModelSortDirection {
+  ASC = "ASC",
+  DESC = "DESC",
+}
+
+
 export type ModelUserConnection = {
   __typename: "ModelUserConnection",
   items:  Array<User | null >,
@@ -550,12 +556,6 @@ export type ModelIDKeyConditionInput = {
   between?: Array< string | null > | null,
   beginsWith?: string | null,
 };
-
-export enum ModelSortDirection {
-  ASC = "ASC",
-  DESC = "DESC",
-}
-
 
 export type ModelSubscriptionContestFilterInput = {
   id?: ModelSubscriptionIDInput | null,
@@ -681,6 +681,25 @@ export type ModelSubscriptionUserFilterInput = {
   deletedAt?: ModelSubscriptionStringInput | null,
   and?: Array< ModelSubscriptionUserFilterInput | null > | null,
   or?: Array< ModelSubscriptionUserFilterInput | null > | null,
+};
+
+export type GetBasicUserQueryVariables = {
+  id: string,
+};
+
+export type GetBasicUserQuery = {
+  getUser?:  {
+    __typename: "User",
+    id: string,
+    email: string,
+    firstName?: string | null,
+    lastName?: string | null,
+    role: number,
+    awsSub: string,
+    createdAt: string,
+    updatedAt: string,
+    deletedAt?: string | null,
+  } | null,
 };
 
 export type CreateContestMutationVariables = {
@@ -1086,7 +1105,7 @@ export type CreateUserMutation = {
     firstName?: string | null,
     lastName?: string | null,
     role: number,
-    awsSub?: string | null,
+    awsSub: string,
     createdAt: string,
     updatedAt: string,
     deletedAt?: string | null,
@@ -1118,7 +1137,7 @@ export type UpdateUserMutation = {
     firstName?: string | null,
     lastName?: string | null,
     role: number,
-    awsSub?: string | null,
+    awsSub: string,
     createdAt: string,
     updatedAt: string,
     deletedAt?: string | null,
@@ -1150,7 +1169,7 @@ export type DeleteUserMutation = {
     firstName?: string | null,
     lastName?: string | null,
     role: number,
-    awsSub?: string | null,
+    awsSub: string,
     createdAt: string,
     updatedAt: string,
     deletedAt?: string | null,
@@ -1441,7 +1460,7 @@ export type GetUserQuery = {
     firstName?: string | null,
     lastName?: string | null,
     role: number,
-    awsSub?: string | null,
+    awsSub: string,
     createdAt: string,
     updatedAt: string,
     deletedAt?: string | null,
@@ -1461,9 +1480,11 @@ export type GetUserQuery = {
 };
 
 export type ListUsersQueryVariables = {
+  id?: string | null,
   filter?: ModelUserFilterInput | null,
   limit?: number | null,
   nextToken?: string | null,
+  sortDirection?: ModelSortDirection | null,
 };
 
 export type ListUsersQuery = {
@@ -1476,7 +1497,7 @@ export type ListUsersQuery = {
       firstName?: string | null,
       lastName?: string | null,
       role: number,
-      awsSub?: string | null,
+      awsSub: string,
       createdAt: string,
       updatedAt: string,
       deletedAt?: string | null,
@@ -1767,6 +1788,33 @@ export type TierSlotsByFighterIdAndIdQuery = {
       tierListId: string,
       fighterId: string,
       position?: number | null,
+      createdAt: string,
+      updatedAt: string,
+      deletedAt?: string | null,
+    } | null >,
+    nextToken?: string | null,
+  } | null,
+};
+
+export type UsersByAwsSubQueryVariables = {
+  awsSub: string,
+  sortDirection?: ModelSortDirection | null,
+  filter?: ModelUserFilterInput | null,
+  limit?: number | null,
+  nextToken?: string | null,
+};
+
+export type UsersByAwsSubQuery = {
+  usersByAwsSub?:  {
+    __typename: "ModelUserConnection",
+    items:  Array< {
+      __typename: "User",
+      id: string,
+      email: string,
+      firstName?: string | null,
+      lastName?: string | null,
+      role: number,
+      awsSub: string,
       createdAt: string,
       updatedAt: string,
       deletedAt?: string | null,
@@ -2159,7 +2207,7 @@ export type OnCreateUserSubscription = {
     firstName?: string | null,
     lastName?: string | null,
     role: number,
-    awsSub?: string | null,
+    awsSub: string,
     createdAt: string,
     updatedAt: string,
     deletedAt?: string | null,
@@ -2190,7 +2238,7 @@ export type OnUpdateUserSubscription = {
     firstName?: string | null,
     lastName?: string | null,
     role: number,
-    awsSub?: string | null,
+    awsSub: string,
     createdAt: string,
     updatedAt: string,
     deletedAt?: string | null,
@@ -2221,7 +2269,7 @@ export type OnDeleteUserSubscription = {
     firstName?: string | null,
     lastName?: string | null,
     role: number,
-    awsSub?: string | null,
+    awsSub: string,
     createdAt: string,
     updatedAt: string,
     deletedAt?: string | null,

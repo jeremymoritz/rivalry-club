@@ -290,11 +290,19 @@ export const getUser = /* GraphQL */ `query GetUser($id: ID!) {
 }
 ` as GeneratedQuery<APITypes.GetUserQueryVariables, APITypes.GetUserQuery>;
 export const listUsers = /* GraphQL */ `query ListUsers(
+  $id: ID
   $filter: ModelUserFilterInput
   $limit: Int
   $nextToken: String
+  $sortDirection: ModelSortDirection
 ) {
-  listUsers(filter: $filter, limit: $limit, nextToken: $nextToken) {
+  listUsers(
+    id: $id
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    sortDirection: $sortDirection
+  ) {
     items {
       id
       email
@@ -689,4 +697,38 @@ export const tierSlotsByFighterIdAndId = /* GraphQL */ `query TierSlotsByFighter
 ` as GeneratedQuery<
   APITypes.TierSlotsByFighterIdAndIdQueryVariables,
   APITypes.TierSlotsByFighterIdAndIdQuery
+>;
+export const usersByAwsSub = /* GraphQL */ `query UsersByAwsSub(
+  $awsSub: String!
+  $sortDirection: ModelSortDirection
+  $filter: ModelUserFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  usersByAwsSub(
+    awsSub: $awsSub
+    sortDirection: $sortDirection
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+  ) {
+    items {
+      id
+      email
+      firstName
+      lastName
+      role
+      awsSub
+      createdAt
+      updatedAt
+      deletedAt
+      __typename
+    }
+    nextToken
+    __typename
+  }
+}
+` as GeneratedQuery<
+  APITypes.UsersByAwsSubQueryVariables,
+  APITypes.UsersByAwsSubQuery
 >;

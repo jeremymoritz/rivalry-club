@@ -9,7 +9,7 @@ export type GetBasicUserQuery = {
     firstName?: string | null;
     lastName?: string | null;
     role: number;
-    awsSub?: string | null;
+    awsSub: string;
     createdAt: string;
     updatedAt: string;
     deletedAt?: string | null;
