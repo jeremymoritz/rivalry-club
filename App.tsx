@@ -62,6 +62,7 @@ function Section({ children, title }: SectionProps): JSX.Element {
 }
 
 import awsExports from './src/aws-exports';
+import UserList from './src/components/user-list';
 Amplify.configure(awsExports);
 
 function SignOutButton(): JSX.Element {
@@ -88,6 +89,7 @@ function App(): JSX.Element {
             contentInsetAdjustmentBehavior="automatic"
             style={backgroundStyle}>
             <Header />
+            <UserList />
             <View
               style={{
                 backgroundColor: isDarkMode ? Colors.black : Colors.white,
