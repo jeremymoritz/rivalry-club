@@ -53,7 +53,10 @@ function Section({ children, title }: SectionProps): JSX.Element {
 }
 
 function SignOutButton(): JSX.Element {
-  const { signOut } = useAuthenticator();
+  const { user, signOut } = useAuthenticator();
+
+  console.warn({ amplifyUser: user });
+
   return <Button title="Sign Out" onPress={signOut} />;
 }
 
