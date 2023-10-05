@@ -1,0 +1,264 @@
+# MUTATION
+
+mutation UpdateMultipleFighters(
+	$fighter1: UpdateFighterInput!,
+	$fighter2: UpdateFighterInput!,
+	$fighter3: UpdateFighterInput!,
+	$fighter4: UpdateFighterInput!,
+	$fighter5: UpdateFighterInput!,
+	$fighter6: UpdateFighterInput!,
+	$fighter7: UpdateFighterInput!,
+	$fighter8: UpdateFighterInput!,
+	$fighter9: UpdateFighterInput!,
+	$fighter10: UpdateFighterInput!,
+	$fighter11: UpdateFighterInput!,
+	$fighter12: UpdateFighterInput!,
+	$fighter13: UpdateFighterInput!,
+	$fighter14: UpdateFighterInput!,
+	$fighter15: UpdateFighterInput!,
+	$fighter16: UpdateFighterInput!,
+	$fighter17: UpdateFighterInput!,
+	$fighter18: UpdateFighterInput!,
+	$fighter19: UpdateFighterInput!,
+	$fighter20: UpdateFighterInput!,
+	$fighter21: UpdateFighterInput!,
+	$fighter22: UpdateFighterInput!,
+	$fighter23: UpdateFighterInput!,
+	$fighter24: UpdateFighterInput!,
+	$fighter25: UpdateFighterInput!,
+	$fighter26: UpdateFighterInput!,
+	$fighter27: UpdateFighterInput!,
+	$fighter28: UpdateFighterInput!,
+	$fighter29: UpdateFighterInput!,
+	$fighter30: UpdateFighterInput!,
+	$fighter31: UpdateFighterInput!,
+	$fighter32: UpdateFighterInput!,
+	$fighter33: UpdateFighterInput!,
+	$fighter34: UpdateFighterInput!,
+	$fighter35: UpdateFighterInput!,
+	$fighter36: UpdateFighterInput!,
+	$fighter37: UpdateFighterInput!,
+	$fighter38: UpdateFighterInput!,
+	$fighter39: UpdateFighterInput!,
+	$fighter40: UpdateFighterInput!,
+	$fighter41: UpdateFighterInput!,
+	$fighter42: UpdateFighterInput!,
+	$fighter43: UpdateFighterInput!,
+	$fighter44: UpdateFighterInput!,
+	$fighter45: UpdateFighterInput!,
+	$fighter46: UpdateFighterInput!,
+	$fighter47: UpdateFighterInput!,
+	$fighter48: UpdateFighterInput!,
+	$fighter49: UpdateFighterInput!,
+	$fighter50: UpdateFighterInput!,
+	$fighter51: UpdateFighterInput!,
+	$fighter52: UpdateFighterInput!,
+	$fighter53: UpdateFighterInput!,
+	$fighter54: UpdateFighterInput!,
+	$fighter55: UpdateFighterInput!,
+	$fighter56: UpdateFighterInput!,
+	$fighter57: UpdateFighterInput!,
+	$fighter58: UpdateFighterInput!,
+	$fighter59: UpdateFighterInput!,
+	$fighter60: UpdateFighterInput!,
+	$fighter61: UpdateFighterInput!,
+	$fighter62: UpdateFighterInput!,
+	$fighter63: UpdateFighterInput!,
+	$fighter64: UpdateFighterInput!,
+	$fighter65: UpdateFighterInput!,
+	$fighter66: UpdateFighterInput!,
+	$fighter67: UpdateFighterInput!,
+	$fighter68: UpdateFighterInput!,
+	$fighter69: UpdateFighterInput!,
+	$fighter70: UpdateFighterInput!,
+	$fighter71: UpdateFighterInput!,
+	$fighter72: UpdateFighterInput!,
+	$fighter73: UpdateFighterInput!,
+	$fighter74: UpdateFighterInput!,
+	$fighter75: UpdateFighterInput!,
+	$fighter76: UpdateFighterInput!,
+	$fighter77: UpdateFighterInput!,
+	$fighter78: UpdateFighterInput!,
+	$fighter79: UpdateFighterInput!,
+	$fighter80: UpdateFighterInput!,
+	$fighter81: UpdateFighterInput!,
+	$fighter82: UpdateFighterInput!,
+	$fighter83: UpdateFighterInput!,
+	$fighter84: UpdateFighterInput!
+) {
+	q1: updateFighter(input: $fighter1) { name gamePosition }
+	q2: updateFighter(input: $fighter2) { name gamePosition }
+	q3: updateFighter(input: $fighter3) { name gamePosition }
+	q4: updateFighter(input: $fighter4) { name gamePosition }
+	q5: updateFighter(input: $fighter5) { name gamePosition }
+	q6: updateFighter(input: $fighter6) { name gamePosition }
+	q7: updateFighter(input: $fighter7) { name gamePosition }
+	q8: updateFighter(input: $fighter8) { name gamePosition }
+	q9: updateFighter(input: $fighter9) { name gamePosition }
+	q10: updateFighter(input: $fighter10) { name gamePosition }
+	q11: updateFighter(input: $fighter11) { name gamePosition }
+	q12: updateFighter(input: $fighter12) { name gamePosition }
+	q13: updateFighter(input: $fighter13) { name gamePosition }
+	q14: updateFighter(input: $fighter14) { name gamePosition }
+	q15: updateFighter(input: $fighter15) { name gamePosition }
+	q16: updateFighter(input: $fighter16) { name gamePosition }
+	q17: updateFighter(input: $fighter17) { name gamePosition }
+	q18: updateFighter(input: $fighter18) { name gamePosition }
+	q19: updateFighter(input: $fighter19) { name gamePosition }
+	q20: updateFighter(input: $fighter20) { name gamePosition }
+	q21: updateFighter(input: $fighter21) { name gamePosition }
+	q22: updateFighter(input: $fighter22) { name gamePosition }
+	q23: updateFighter(input: $fighter23) { name gamePosition }
+	q24: updateFighter(input: $fighter24) { name gamePosition }
+	q25: updateFighter(input: $fighter25) { name gamePosition }
+	q26: updateFighter(input: $fighter26) { name gamePosition }
+	q27: updateFighter(input: $fighter27) { name gamePosition }
+	q28: updateFighter(input: $fighter28) { name gamePosition }
+	q29: updateFighter(input: $fighter29) { name gamePosition }
+	q30: updateFighter(input: $fighter30) { name gamePosition }
+	q31: updateFighter(input: $fighter31) { name gamePosition }
+	q32: updateFighter(input: $fighter32) { name gamePosition }
+	q33: updateFighter(input: $fighter33) { name gamePosition }
+	q34: updateFighter(input: $fighter34) { name gamePosition }
+	q35: updateFighter(input: $fighter35) { name gamePosition }
+	q36: updateFighter(input: $fighter36) { name gamePosition }
+	q37: updateFighter(input: $fighter37) { name gamePosition }
+	q38: updateFighter(input: $fighter38) { name gamePosition }
+	q39: updateFighter(input: $fighter39) { name gamePosition }
+	q40: updateFighter(input: $fighter40) { name gamePosition }
+	q41: updateFighter(input: $fighter41) { name gamePosition }
+	q42: updateFighter(input: $fighter42) { name gamePosition }
+	q43: updateFighter(input: $fighter43) { name gamePosition }
+	q44: updateFighter(input: $fighter44) { name gamePosition }
+	q45: updateFighter(input: $fighter45) { name gamePosition }
+	q46: updateFighter(input: $fighter46) { name gamePosition }
+	q47: updateFighter(input: $fighter47) { name gamePosition }
+	q48: updateFighter(input: $fighter48) { name gamePosition }
+	q49: updateFighter(input: $fighter49) { name gamePosition }
+	q50: updateFighter(input: $fighter50) { name gamePosition }
+	q51: updateFighter(input: $fighter51) { name gamePosition }
+	q52: updateFighter(input: $fighter52) { name gamePosition }
+	q53: updateFighter(input: $fighter53) { name gamePosition }
+	q54: updateFighter(input: $fighter54) { name gamePosition }
+	q55: updateFighter(input: $fighter55) { name gamePosition }
+	q56: updateFighter(input: $fighter56) { name gamePosition }
+	q57: updateFighter(input: $fighter57) { name gamePosition }
+	q58: updateFighter(input: $fighter58) { name gamePosition }
+	q59: updateFighter(input: $fighter59) { name gamePosition }
+	q60: updateFighter(input: $fighter60) { name gamePosition }
+	q61: updateFighter(input: $fighter61) { name gamePosition }
+	q62: updateFighter(input: $fighter62) { name gamePosition }
+	q63: updateFighter(input: $fighter63) { name gamePosition }
+	q64: updateFighter(input: $fighter64) { name gamePosition }
+	q65: updateFighter(input: $fighter65) { name gamePosition }
+	q66: updateFighter(input: $fighter66) { name gamePosition }
+	q67: updateFighter(input: $fighter67) { name gamePosition }
+	q68: updateFighter(input: $fighter68) { name gamePosition }
+	q69: updateFighter(input: $fighter69) { name gamePosition }
+	q70: updateFighter(input: $fighter70) { name gamePosition }
+	q71: updateFighter(input: $fighter71) { name gamePosition }
+	q72: updateFighter(input: $fighter72) { name gamePosition }
+	q73: updateFighter(input: $fighter73) { name gamePosition }
+	q74: updateFighter(input: $fighter74) { name gamePosition }
+	q75: updateFighter(input: $fighter75) { name gamePosition }
+	q76: updateFighter(input: $fighter76) { name gamePosition }
+	q77: updateFighter(input: $fighter77) { name gamePosition }
+	q78: updateFighter(input: $fighter78) { name gamePosition }
+	q79: updateFighter(input: $fighter79) { name gamePosition }
+	q80: updateFighter(input: $fighter80) { name gamePosition }
+	q81: updateFighter(input: $fighter81) { name gamePosition }
+	q82: updateFighter(input: $fighter82) { name gamePosition }
+	q83: updateFighter(input: $fighter83) { name gamePosition }
+	q84: updateFighter(input: $fighter84) { name gamePosition }
+}
+
+
+
+# VARIABLES
+
+{
+	"fighter1": { "id": "483cfead-6301-11ee-a22d-169ccb685861", "gamePosition": 1 },
+	"fighter2": { "id": "483d0208-6301-11ee-a22d-169ccb685861", "gamePosition": 2 },
+	"fighter3": { "id": "483d02ea-6301-11ee-a22d-169ccb685861", "gamePosition": 3 },
+	"fighter4": { "id": "483d038a-6301-11ee-a22d-169ccb685861", "gamePosition": 4 },
+	"fighter5": { "id": "483d041f-6301-11ee-a22d-169ccb685861", "gamePosition": 5 },
+	"fighter6": { "id": "483d04b6-6301-11ee-a22d-169ccb685861", "gamePosition": 6 },
+	"fighter7": { "id": "483d0543-6301-11ee-a22d-169ccb685861", "gamePosition": 7 },
+	"fighter8": { "id": "483d05d0-6301-11ee-a22d-169ccb685861", "gamePosition": 8 },
+	"fighter9": { "id": "483d073f-6301-11ee-a22d-169ccb685861", "gamePosition": 9 },
+	"fighter10": { "id": "483d07dd-6301-11ee-a22d-169ccb685861", "gamePosition": 10 },
+	"fighter11": { "id": "483d0879-6301-11ee-a22d-169ccb685861", "gamePosition": 11 },
+	"fighter12": { "id": "483d0907-6301-11ee-a22d-169ccb685861", "gamePosition": 12 },
+	"fighter13": { "id": "483d0993-6301-11ee-a22d-169ccb685861", "gamePosition": 13 },
+	"fighter14": { "id": "483d0a1a-6301-11ee-a22d-169ccb685861", "gamePosition": 14 },
+	"fighter15": { "id": "483d0aa1-6301-11ee-a22d-169ccb685861", "gamePosition": 15 },
+	"fighter16": { "id": "483d0b31-6301-11ee-a22d-169ccb685861", "gamePosition": 16 },
+	"fighter17": { "id": "483d0bb8-6301-11ee-a22d-169ccb685861", "gamePosition": 17 },
+	"fighter18": { "id": "483d0c46-6301-11ee-a22d-169ccb685861", "gamePosition": 18 },
+	"fighter19": { "id": "483d0ccf-6301-11ee-a22d-169ccb685861", "gamePosition": 19 },
+	"fighter20": { "id": "483d0d66-6301-11ee-a22d-169ccb685861", "gamePosition": 20 },
+	"fighter21": { "id": "483d0df0-6301-11ee-a22d-169ccb685861", "gamePosition": 21 },
+	"fighter22": { "id": "483d0e76-6301-11ee-a22d-169ccb685861", "gamePosition": 22 },
+	"fighter23": { "id": "483d0f02-6301-11ee-a22d-169ccb685861", "gamePosition": 23 },
+	"fighter24": { "id": "483d0f8d-6301-11ee-a22d-169ccb685861", "gamePosition": 24 },
+	"fighter25": { "id": "483d1018-6301-11ee-a22d-169ccb685861", "gamePosition": 25 },
+	"fighter26": { "id": "483d109e-6301-11ee-a22d-169ccb685861", "gamePosition": 26 },
+	"fighter27": { "id": "483d1126-6301-11ee-a22d-169ccb685861", "gamePosition": 27 },
+	"fighter28": { "id": "483d11aa-6301-11ee-a22d-169ccb685861", "gamePosition": 28 },
+	"fighter29": { "id": "483d1231-6301-11ee-a22d-169ccb685861", "gamePosition": 29 },
+	"fighter30": { "id": "483d12bf-6301-11ee-a22d-169ccb685861", "gamePosition": 30 },
+	"fighter31": { "id": "483d1347-6301-11ee-a22d-169ccb685861", "gamePosition": 31 },
+	"fighter32": { "id": "483d13ce-6301-11ee-a22d-169ccb685861", "gamePosition": 32 },
+	"fighter33": { "id": "483d1456-6301-11ee-a22d-169ccb685861", "gamePosition": 33 },
+	"fighter34": { "id": "483d14dc-6301-11ee-a22d-169ccb685861", "gamePosition": 34 },
+	"fighter35": { "id": "483d156a-6301-11ee-a22d-169ccb685861", "gamePosition": 35 },
+	"fighter36": { "id": "483d15ee-6301-11ee-a22d-169ccb685861", "gamePosition": 36 },
+	"fighter37": { "id": "483d1676-6301-11ee-a22d-169ccb685861", "gamePosition": 37 },
+	"fighter38": { "id": "483d1797-6301-11ee-a22d-169ccb685861", "gamePosition": 38 },
+	"fighter39": { "id": "483d182f-6301-11ee-a22d-169ccb685861", "gamePosition": 39 },
+	"fighter40": { "id": "483d18b4-6301-11ee-a22d-169ccb685861", "gamePosition": 40 },
+	"fighter41": { "id": "483d1932-6301-11ee-a22d-169ccb685861", "gamePosition": 41 },
+	"fighter42": { "id": "483d19b8-6301-11ee-a22d-169ccb685861", "gamePosition": 42 },
+	"fighter43": { "id": "483d1a3b-6301-11ee-a22d-169ccb685861", "gamePosition": 43 },
+	"fighter44": { "id": "483d1aba-6301-11ee-a22d-169ccb685861", "gamePosition": 44 },
+	"fighter45": { "id": "483d1b3f-6301-11ee-a22d-169ccb685861", "gamePosition": 45 },
+	"fighter46": { "id": "483d1bbf-6301-11ee-a22d-169ccb685861", "gamePosition": 46 },
+	"fighter47": { "id": "483d1c40-6301-11ee-a22d-169ccb685861", "gamePosition": 47 },
+	"fighter48": { "id": "483d1cc5-6301-11ee-a22d-169ccb685861", "gamePosition": 48 },
+	"fighter49": { "id": "483d1d43-6301-11ee-a22d-169ccb685861", "gamePosition": 49 },
+	"fighter50": { "id": "483d1e61-6301-11ee-a22d-169ccb685861", "gamePosition": 50 },
+	"fighter51": { "id": "483d1ee9-6301-11ee-a22d-169ccb685861", "gamePosition": 51 },
+	"fighter52": { "id": "483d1f7c-6301-11ee-a22d-169ccb685861", "gamePosition": 52 },
+	"fighter53": { "id": "483d2001-6301-11ee-a22d-169ccb685861", "gamePosition": 53 },
+	"fighter54": { "id": "483d2085-6301-11ee-a22d-169ccb685861", "gamePosition": 54 },
+	"fighter55": { "id": "483d210b-6301-11ee-a22d-169ccb685861", "gamePosition": 55 },
+	"fighter56": { "id": "483d2191-6301-11ee-a22d-169ccb685861", "gamePosition": 56 },
+	"fighter57": { "id": "483d221a-6301-11ee-a22d-169ccb685861", "gamePosition": 57 },
+	"fighter58": { "id": "483d22a0-6301-11ee-a22d-169ccb685861", "gamePosition": 58 },
+	"fighter59": { "id": "483d232b-6301-11ee-a22d-169ccb685861", "gamePosition": 59 },
+	"fighter60": { "id": "483d23ae-6301-11ee-a22d-169ccb685861", "gamePosition": 60 },
+	"fighter61": { "id": "483d2434-6301-11ee-a22d-169ccb685861", "gamePosition": 61 },
+	"fighter62": { "id": "483d24b8-6301-11ee-a22d-169ccb685861", "gamePosition": 62 },
+	"fighter63": { "id": "483d253f-6301-11ee-a22d-169ccb685861", "gamePosition": 63 },
+	"fighter64": { "id": "483d25c3-6301-11ee-a22d-169ccb685861", "gamePosition": 64 },
+	"fighter65": { "id": "483d264d-6301-11ee-a22d-169ccb685861", "gamePosition": 65 },
+	"fighter66": { "id": "483d26d3-6301-11ee-a22d-169ccb685861", "gamePosition": 66 },
+	"fighter67": { "id": "483d27d7-6301-11ee-a22d-169ccb685861", "gamePosition": 67 },
+	"fighter68": { "id": "483d287a-6301-11ee-a22d-169ccb685861", "gamePosition": 68 },
+	"fighter69": { "id": "483d2910-6301-11ee-a22d-169ccb685861", "gamePosition": 69 },
+	"fighter70": { "id": "483d299e-6301-11ee-a22d-169ccb685861", "gamePosition": 70 },
+	"fighter71": { "id": "483d2a28-6301-11ee-a22d-169ccb685861", "gamePosition": 71 },
+	"fighter72": { "id": "483d2ab5-6301-11ee-a22d-169ccb685861", "gamePosition": 72 },
+	"fighter73": { "id": "483d2b88-6301-11ee-a22d-169ccb685861", "gamePosition": 73 },
+	"fighter74": { "id": "483d2c1c-6301-11ee-a22d-169ccb685861", "gamePosition": 74 },
+	"fighter75": { "id": "483d2ca9-6301-11ee-a22d-169ccb685861", "gamePosition": 75 },
+	"fighter76": { "id": "483d2dfc-6301-11ee-a22d-169ccb685861", "gamePosition": 76 },
+	"fighter77": { "id": "483d2e91-6301-11ee-a22d-169ccb685861", "gamePosition": 77 },
+	"fighter78": { "id": "483d2f1a-6301-11ee-a22d-169ccb685861", "gamePosition": 78 },
+	"fighter79": { "id": "483d2fa3-6301-11ee-a22d-169ccb685861", "gamePosition": 79 },
+	"fighter80": { "id": "483d3032-6301-11ee-a22d-169ccb685861", "gamePosition": 80 },
+	"fighter81": { "id": "483d30ba-6301-11ee-a22d-169ccb685861", "gamePosition": 81 },
+	"fighter82": { "id": "483d3143-6301-11ee-a22d-169ccb685861", "gamePosition": 82 },
+	"fighter83": { "id": "483d3267-6301-11ee-a22d-169ccb685861", "gamePosition": 83 },
+	"fighter84": { "id": "483d32f9-6301-11ee-a22d-169ccb685861", "gamePosition": 84 }
+}

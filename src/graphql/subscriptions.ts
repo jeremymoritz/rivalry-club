@@ -67,6 +67,7 @@ export const onCreateFighter = /* GraphQL */ `subscription OnCreateFighter($filt
     id
     name
     gameId
+    gamePosition
     createdAt
     updatedAt
     tierSlots {
@@ -85,6 +86,7 @@ export const onUpdateFighter = /* GraphQL */ `subscription OnUpdateFighter($filt
     id
     name
     gameId
+    gamePosition
     createdAt
     updatedAt
     tierSlots {
@@ -103,6 +105,7 @@ export const onDeleteFighter = /* GraphQL */ `subscription OnDeleteFighter($filt
     id
     name
     gameId
+    gamePosition
     createdAt
     updatedAt
     tierSlots {

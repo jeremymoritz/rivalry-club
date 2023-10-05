@@ -205,6 +205,7 @@ export type CreateFighterInput = {
   id?: string | null,
   name: string,
   gameId: string,
+  gamePosition?: number | null,
   createdAt?: string | null,
   updatedAt?: string | null,
 };
@@ -212,6 +213,7 @@ export type CreateFighterInput = {
 export type ModelFighterConditionInput = {
   name?: ModelStringInput | null,
   gameId?: ModelIDInput | null,
+  gamePosition?: ModelIntInput | null,
   createdAt?: ModelStringInput | null,
   updatedAt?: ModelStringInput | null,
   and?: Array< ModelFighterConditionInput | null > | null,
@@ -224,6 +226,7 @@ export type Fighter = {
   id: string,
   name: string,
   gameId: string,
+  gamePosition?: number | null,
   createdAt: string,
   updatedAt: string,
   tierSlots?: ModelTierSlotConnection | null,
@@ -233,6 +236,7 @@ export type UpdateFighterInput = {
   id: string,
   name?: string | null,
   gameId?: string | null,
+  gamePosition?: number | null,
   createdAt?: string | null,
   updatedAt?: string | null,
 };
@@ -457,6 +461,7 @@ export type ModelFighterFilterInput = {
   id?: ModelIDInput | null,
   name?: ModelStringInput | null,
   gameId?: ModelIDInput | null,
+  gamePosition?: ModelIntInput | null,
   createdAt?: ModelStringInput | null,
   updatedAt?: ModelStringInput | null,
   and?: Array< ModelFighterFilterInput | null > | null,
@@ -617,6 +622,7 @@ export type ModelSubscriptionFighterFilterInput = {
   id?: ModelSubscriptionIDInput | null,
   name?: ModelSubscriptionStringInput | null,
   gameId?: ModelSubscriptionIDInput | null,
+  gamePosition?: ModelSubscriptionIntInput | null,
   createdAt?: ModelSubscriptionStringInput | null,
   updatedAt?: ModelSubscriptionStringInput | null,
   and?: Array< ModelSubscriptionFighterFilterInput | null > | null,
@@ -773,6 +779,7 @@ export type CreateFighterMutation = {
     id: string,
     name: string,
     gameId: string,
+    gamePosition?: number | null,
     createdAt: string,
     updatedAt: string,
     tierSlots?:  {
@@ -793,6 +800,7 @@ export type UpdateFighterMutation = {
     id: string,
     name: string,
     gameId: string,
+    gamePosition?: number | null,
     createdAt: string,
     updatedAt: string,
     tierSlots?:  {
@@ -813,6 +821,7 @@ export type DeleteFighterMutation = {
     id: string,
     name: string,
     gameId: string,
+    gamePosition?: number | null,
     createdAt: string,
     updatedAt: string,
     tierSlots?:  {
@@ -1242,6 +1251,7 @@ export type GetFighterQuery = {
     id: string,
     name: string,
     gameId: string,
+    gamePosition?: number | null,
     createdAt: string,
     updatedAt: string,
     tierSlots?:  {
@@ -1265,6 +1275,7 @@ export type ListFightersQuery = {
       id: string,
       name: string,
       gameId: string,
+      gamePosition?: number | null,
       createdAt: string,
       updatedAt: string,
     } | null >,
@@ -1607,6 +1618,7 @@ export type FightersByGameIdAndIdQuery = {
       id: string,
       name: string,
       gameId: string,
+      gamePosition?: number | null,
       createdAt: string,
       updatedAt: string,
     } | null >,
@@ -1890,6 +1902,7 @@ export type OnCreateFighterSubscription = {
     id: string,
     name: string,
     gameId: string,
+    gamePosition?: number | null,
     createdAt: string,
     updatedAt: string,
     tierSlots?:  {
@@ -1909,6 +1922,7 @@ export type OnUpdateFighterSubscription = {
     id: string,
     name: string,
     gameId: string,
+    gamePosition?: number | null,
     createdAt: string,
     updatedAt: string,
     tierSlots?:  {
@@ -1928,6 +1942,7 @@ export type OnDeleteFighterSubscription = {
     id: string,
     name: string,
     gameId: string,
+    gamePosition?: number | null,
     createdAt: string,
     updatedAt: string,
     tierSlots?:  {

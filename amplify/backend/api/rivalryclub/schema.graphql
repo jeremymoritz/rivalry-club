@@ -20,6 +20,7 @@ type Fighter @model {
   id: ID!
   name: String!
   gameId: ID! @index(name: "byGame", sortKeyFields: ["id"])
+  gamePosition: Int
 
   createdAt: AWSDateTime!
   updatedAt: AWSDateTime!

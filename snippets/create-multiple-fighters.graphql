@@ -1,0 +1,263 @@
+# GRAPHQL QUERY
+
+mutation CreateMultipleFighters(
+	$fighter1: CreateFighterInput!,
+	$fighter2: CreateFighterInput!,
+	$fighter3: CreateFighterInput!,
+	$fighter4: CreateFighterInput!,
+	$fighter5: CreateFighterInput!,
+	$fighter6: CreateFighterInput!,
+	$fighter7: CreateFighterInput!,
+	$fighter8: CreateFighterInput!,
+	$fighter9: CreateFighterInput!,
+	$fighter10: CreateFighterInput!,
+	$fighter11: CreateFighterInput!,
+	$fighter12: CreateFighterInput!,
+	$fighter13: CreateFighterInput!,
+	$fighter14: CreateFighterInput!,
+	$fighter15: CreateFighterInput!,
+	$fighter16: CreateFighterInput!,
+	$fighter17: CreateFighterInput!,
+	$fighter18: CreateFighterInput!,
+	$fighter19: CreateFighterInput!,
+	$fighter20: CreateFighterInput!,
+	$fighter21: CreateFighterInput!,
+	$fighter22: CreateFighterInput!,
+	$fighter23: CreateFighterInput!,
+	$fighter24: CreateFighterInput!,
+	$fighter25: CreateFighterInput!,
+	$fighter26: CreateFighterInput!,
+	$fighter27: CreateFighterInput!,
+	$fighter28: CreateFighterInput!,
+	$fighter29: CreateFighterInput!,
+	$fighter30: CreateFighterInput!,
+	$fighter31: CreateFighterInput!,
+	$fighter32: CreateFighterInput!,
+	$fighter33: CreateFighterInput!,
+	$fighter34: CreateFighterInput!,
+	$fighter35: CreateFighterInput!,
+	$fighter36: CreateFighterInput!,
+	$fighter37: CreateFighterInput!,
+	$fighter38: CreateFighterInput!,
+	$fighter39: CreateFighterInput!,
+	$fighter40: CreateFighterInput!,
+	$fighter41: CreateFighterInput!,
+	$fighter42: CreateFighterInput!,
+	$fighter43: CreateFighterInput!,
+	$fighter44: CreateFighterInput!,
+	$fighter45: CreateFighterInput!,
+	$fighter46: CreateFighterInput!,
+	$fighter47: CreateFighterInput!,
+	$fighter48: CreateFighterInput!,
+	$fighter49: CreateFighterInput!,
+	$fighter50: CreateFighterInput!,
+	$fighter51: CreateFighterInput!,
+	$fighter52: CreateFighterInput!,
+	$fighter53: CreateFighterInput!,
+	$fighter54: CreateFighterInput!,
+	$fighter55: CreateFighterInput!,
+	$fighter56: CreateFighterInput!,
+	$fighter57: CreateFighterInput!,
+	$fighter58: CreateFighterInput!,
+	$fighter59: CreateFighterInput!,
+	$fighter60: CreateFighterInput!,
+	$fighter61: CreateFighterInput!,
+	$fighter62: CreateFighterInput!,
+	$fighter63: CreateFighterInput!,
+	$fighter64: CreateFighterInput!,
+	$fighter65: CreateFighterInput!,
+	$fighter66: CreateFighterInput!,
+	$fighter67: CreateFighterInput!,
+	$fighter68: CreateFighterInput!,
+	$fighter69: CreateFighterInput!,
+	$fighter70: CreateFighterInput!,
+	$fighter71: CreateFighterInput!,
+	$fighter72: CreateFighterInput!,
+	$fighter73: CreateFighterInput!,
+	$fighter74: CreateFighterInput!,
+	$fighter75: CreateFighterInput!,
+	$fighter76: CreateFighterInput!,
+	$fighter77: CreateFighterInput!,
+	$fighter78: CreateFighterInput!,
+	$fighter79: CreateFighterInput!,
+	$fighter80: CreateFighterInput!,
+	$fighter81: CreateFighterInput!,
+	$fighter82: CreateFighterInput!,
+	$fighter83: CreateFighterInput!,
+	$fighter84: CreateFighterInput!
+) {
+	cf1: createFighter(input: $fighter1) { id name }
+	cf2: createFighter(input: $fighter2) { id name }
+	cf3: createFighter(input: $fighter3) { id name }
+	cf4: createFighter(input: $fighter4) { id name }
+	cf5: createFighter(input: $fighter5) { id name }
+	cf6: createFighter(input: $fighter6) { id name }
+	cf7: createFighter(input: $fighter7) { id name }
+	cf8: createFighter(input: $fighter8) { id name }
+	cf9: createFighter(input: $fighter9) { id name }
+	cf10: createFighter(input: $fighter10) { id name }
+	cf11: createFighter(input: $fighter11) { id name }
+	cf12: createFighter(input: $fighter12) { id name }
+	cf13: createFighter(input: $fighter13) { id name }
+	cf14: createFighter(input: $fighter14) { id name }
+	cf15: createFighter(input: $fighter15) { id name }
+	cf16: createFighter(input: $fighter16) { id name }
+	cf17: createFighter(input: $fighter17) { id name }
+	cf18: createFighter(input: $fighter18) { id name }
+	cf19: createFighter(input: $fighter19) { id name }
+	cf20: createFighter(input: $fighter20) { id name }
+	cf21: createFighter(input: $fighter21) { id name }
+	cf22: createFighter(input: $fighter22) { id name }
+	cf23: createFighter(input: $fighter23) { id name }
+	cf24: createFighter(input: $fighter24) { id name }
+	cf25: createFighter(input: $fighter25) { id name }
+	cf26: createFighter(input: $fighter26) { id name }
+	cf27: createFighter(input: $fighter27) { id name }
+	cf28: createFighter(input: $fighter28) { id name }
+	cf29: createFighter(input: $fighter29) { id name }
+	cf30: createFighter(input: $fighter30) { id name }
+	cf31: createFighter(input: $fighter31) { id name }
+	cf32: createFighter(input: $fighter32) { id name }
+	cf33: createFighter(input: $fighter33) { id name }
+	cf34: createFighter(input: $fighter34) { id name }
+	cf35: createFighter(input: $fighter35) { id name }
+	cf36: createFighter(input: $fighter36) { id name }
+	cf37: createFighter(input: $fighter37) { id name }
+	cf38: createFighter(input: $fighter38) { id name }
+	cf39: createFighter(input: $fighter39) { id name }
+	cf40: createFighter(input: $fighter40) { id name }
+	cf41: createFighter(input: $fighter41) { id name }
+	cf42: createFighter(input: $fighter42) { id name }
+	cf43: createFighter(input: $fighter43) { id name }
+	cf44: createFighter(input: $fighter44) { id name }
+	cf45: createFighter(input: $fighter45) { id name }
+	cf46: createFighter(input: $fighter46) { id name }
+	cf47: createFighter(input: $fighter47) { id name }
+	cf48: createFighter(input: $fighter48) { id name }
+	cf49: createFighter(input: $fighter49) { id name }
+	cf50: createFighter(input: $fighter50) { id name }
+	cf51: createFighter(input: $fighter51) { id name }
+	cf52: createFighter(input: $fighter52) { id name }
+	cf53: createFighter(input: $fighter53) { id name }
+	cf54: createFighter(input: $fighter54) { id name }
+	cf55: createFighter(input: $fighter55) { id name }
+	cf56: createFighter(input: $fighter56) { id name }
+	cf57: createFighter(input: $fighter57) { id name }
+	cf58: createFighter(input: $fighter58) { id name }
+	cf59: createFighter(input: $fighter59) { id name }
+	cf60: createFighter(input: $fighter60) { id name }
+	cf61: createFighter(input: $fighter61) { id name }
+	cf62: createFighter(input: $fighter62) { id name }
+	cf63: createFighter(input: $fighter63) { id name }
+	cf64: createFighter(input: $fighter64) { id name }
+	cf65: createFighter(input: $fighter65) { id name }
+	cf66: createFighter(input: $fighter66) { id name }
+	cf67: createFighter(input: $fighter67) { id name }
+	cf68: createFighter(input: $fighter68) { id name }
+	cf69: createFighter(input: $fighter69) { id name }
+	cf70: createFighter(input: $fighter70) { id name }
+	cf71: createFighter(input: $fighter71) { id name }
+	cf72: createFighter(input: $fighter72) { id name }
+	cf73: createFighter(input: $fighter73) { id name }
+	cf74: createFighter(input: $fighter74) { id name }
+	cf75: createFighter(input: $fighter75) { id name }
+	cf76: createFighter(input: $fighter76) { id name }
+	cf77: createFighter(input: $fighter77) { id name }
+	cf78: createFighter(input: $fighter78) { id name }
+	cf79: createFighter(input: $fighter79) { id name }
+	cf80: createFighter(input: $fighter80) { id name }
+	cf81: createFighter(input: $fighter81) { id name }
+	cf82: createFighter(input: $fighter82) { id name }
+	cf83: createFighter(input: $fighter83) { id name }
+	cf84: createFighter(input: $fighter84) { id name }
+}
+
+
+# VARIABLES
+
+{
+	"fighter1": { "id": "483cfead-6301-11ee-a22d-169ccb685861", "name": "Mario", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter2": { "id": "483d0208-6301-11ee-a22d-169ccb685861", "name": "Donkey Kong", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter3": { "id": "483d02ea-6301-11ee-a22d-169ccb685861", "name": "Link", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter4": { "id": "483d038a-6301-11ee-a22d-169ccb685861", "name": "Samus", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter5": { "id": "483d041f-6301-11ee-a22d-169ccb685861", "name": "Dark Samus", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter6": { "id": "483d04b6-6301-11ee-a22d-169ccb685861", "name": "Yoshi", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter7": { "id": "483d0543-6301-11ee-a22d-169ccb685861", "name": "Kirby", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter8": { "id": "483d05d0-6301-11ee-a22d-169ccb685861", "name": "Fox", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter9": { "id": "483d073f-6301-11ee-a22d-169ccb685861", "name": "Pikachu", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter10": { "id": "483d07dd-6301-11ee-a22d-169ccb685861", "name": "Luigi", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter11": { "id": "483d0879-6301-11ee-a22d-169ccb685861", "name": "Ness", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter12": { "id": "483d0907-6301-11ee-a22d-169ccb685861", "name": "Captain Falcon", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter13": { "id": "483d0993-6301-11ee-a22d-169ccb685861", "name": "Jigglypuff", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter14": { "id": "483d0a1a-6301-11ee-a22d-169ccb685861", "name": "Peach", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter15": { "id": "483d0aa1-6301-11ee-a22d-169ccb685861", "name": "Daisy", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter16": { "id": "483d0b31-6301-11ee-a22d-169ccb685861", "name": "Bowser", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter17": { "id": "483d0bb8-6301-11ee-a22d-169ccb685861", "name": "Ice Climbers", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter18": { "id": "483d0c46-6301-11ee-a22d-169ccb685861", "name": "Sheik", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter19": { "id": "483d0ccf-6301-11ee-a22d-169ccb685861", "name": "Zelda", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter20": { "id": "483d0d66-6301-11ee-a22d-169ccb685861", "name": "Dr. Mario", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter21": { "id": "483d0df0-6301-11ee-a22d-169ccb685861", "name": "Pichu", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter22": { "id": "483d0e76-6301-11ee-a22d-169ccb685861", "name": "Falco", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter23": { "id": "483d0f02-6301-11ee-a22d-169ccb685861", "name": "Marth", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter24": { "id": "483d0f8d-6301-11ee-a22d-169ccb685861", "name": "Lucina", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter25": { "id": "483d1018-6301-11ee-a22d-169ccb685861", "name": "Young Link", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter26": { "id": "483d109e-6301-11ee-a22d-169ccb685861", "name": "Ganondorf", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter27": { "id": "483d1126-6301-11ee-a22d-169ccb685861", "name": "Mewtwo", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter28": { "id": "483d11aa-6301-11ee-a22d-169ccb685861", "name": "Roy", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter29": { "id": "483d1231-6301-11ee-a22d-169ccb685861", "name": "Chrom", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter30": { "id": "483d12bf-6301-11ee-a22d-169ccb685861", "name": "Mr. Game & Watch", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter31": { "id": "483d1347-6301-11ee-a22d-169ccb685861", "name": "Meta Knight", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter32": { "id": "483d13ce-6301-11ee-a22d-169ccb685861", "name": "Pit", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter33": { "id": "483d1456-6301-11ee-a22d-169ccb685861", "name": "Dark Pit", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter34": { "id": "483d14dc-6301-11ee-a22d-169ccb685861", "name": "Zero Suit Samus", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter35": { "id": "483d156a-6301-11ee-a22d-169ccb685861", "name": "Wario", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter36": { "id": "483d15ee-6301-11ee-a22d-169ccb685861", "name": "Snake", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter37": { "id": "483d1676-6301-11ee-a22d-169ccb685861", "name": "Ike", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter38": { "id": "483d1797-6301-11ee-a22d-169ccb685861", "name": "Pokémon Trainer", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter39": { "id": "483d182f-6301-11ee-a22d-169ccb685861", "name": "Diddy Kong", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter40": { "id": "483d18b4-6301-11ee-a22d-169ccb685861", "name": "Lucas", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter41": { "id": "483d1932-6301-11ee-a22d-169ccb685861", "name": "Sonic", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter42": { "id": "483d19b8-6301-11ee-a22d-169ccb685861", "name": "King Dedede", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter43": { "id": "483d1a3b-6301-11ee-a22d-169ccb685861", "name": "Olimar", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter44": { "id": "483d1aba-6301-11ee-a22d-169ccb685861", "name": "Lucario", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter45": { "id": "483d1b3f-6301-11ee-a22d-169ccb685861", "name": "R.O.B.", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter46": { "id": "483d1bbf-6301-11ee-a22d-169ccb685861", "name": "Toon Link", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter47": { "id": "483d1c40-6301-11ee-a22d-169ccb685861", "name": "Wolf", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter48": { "id": "483d1cc5-6301-11ee-a22d-169ccb685861", "name": "Villager", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter49": { "id": "483d1d43-6301-11ee-a22d-169ccb685861", "name": "Mega Man", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter50": { "id": "483d1e61-6301-11ee-a22d-169ccb685861", "name": "Wii Fit Trainer", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter51": { "id": "483d1ee9-6301-11ee-a22d-169ccb685861", "name": "Rosalina & Luma", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter52": { "id": "483d1f7c-6301-11ee-a22d-169ccb685861", "name": "Little Mac", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter53": { "id": "483d2001-6301-11ee-a22d-169ccb685861", "name": "Greninja", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter54": { "id": "483d2085-6301-11ee-a22d-169ccb685861", "name": "Mii Fighters", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter55": { "id": "483d210b-6301-11ee-a22d-169ccb685861", "name": "Palutena", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter56": { "id": "483d2191-6301-11ee-a22d-169ccb685861", "name": "Pac-man", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter57": { "id": "483d221a-6301-11ee-a22d-169ccb685861", "name": "Robin", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter58": { "id": "483d22a0-6301-11ee-a22d-169ccb685861", "name": "Shulk", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter59": { "id": "483d232b-6301-11ee-a22d-169ccb685861", "name": "Bowser Jr.", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter60": { "id": "483d23ae-6301-11ee-a22d-169ccb685861", "name": "Duck Hunt", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter61": { "id": "483d2434-6301-11ee-a22d-169ccb685861", "name": "Ryu", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter62": { "id": "483d24b8-6301-11ee-a22d-169ccb685861", "name": "Ken", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter63": { "id": "483d253f-6301-11ee-a22d-169ccb685861", "name": "Cloud", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter64": { "id": "483d25c3-6301-11ee-a22d-169ccb685861", "name": "Corrin", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter65": { "id": "483d264d-6301-11ee-a22d-169ccb685861", "name": "Bayonetta", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter66": { "id": "483d26d3-6301-11ee-a22d-169ccb685861", "name": "Inkling", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter67": { "id": "483d27d7-6301-11ee-a22d-169ccb685861", "name": "Ridley", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter68": { "id": "483d287a-6301-11ee-a22d-169ccb685861", "name": "Simon", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter69": { "id": "483d2910-6301-11ee-a22d-169ccb685861", "name": "Richter", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter70": { "id": "483d299e-6301-11ee-a22d-169ccb685861", "name": "King K. Rool", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter71": { "id": "483d2a28-6301-11ee-a22d-169ccb685861", "name": "Isabelle", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter72": { "id": "483d2ab5-6301-11ee-a22d-169ccb685861", "name": "Incineroar", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter73": { "id": "483d2b88-6301-11ee-a22d-169ccb685861", "name": "Piranha Plant", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter74": { "id": "483d2c1c-6301-11ee-a22d-169ccb685861", "name": "Joker", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter75": { "id": "483d2ca9-6301-11ee-a22d-169ccb685861", "name": "Hero", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter76": { "id": "483d2dfc-6301-11ee-a22d-169ccb685861", "name": "Banjo & Kazooie", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter77": { "id": "483d2e91-6301-11ee-a22d-169ccb685861", "name": "Terry", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter78": { "id": "483d2f1a-6301-11ee-a22d-169ccb685861", "name": "Byleth", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter79": { "id": "483d2fa3-6301-11ee-a22d-169ccb685861", "name": "Min Min", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter80": { "id": "483d3032-6301-11ee-a22d-169ccb685861", "name": "Steve", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter81": { "id": "483d30ba-6301-11ee-a22d-169ccb685861", "name": "Sephiroth", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter82": { "id": "483d3143-6301-11ee-a22d-169ccb685861", "name": "Pyra / Mythra", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter83": { "id": "483d3267-6301-11ee-a22d-169ccb685861", "name": "Kazuya", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" },
+	"fighter84": { "id": "483d32f9-6301-11ee-a22d-169ccb685861", "name": "Sora", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a" }
+}

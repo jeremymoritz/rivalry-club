@@ -79,6 +79,7 @@ export const createFighter = /* GraphQL */ `mutation CreateFighter(
     id
     name
     gameId
+    gamePosition
     createdAt
     updatedAt
     tierSlots {
@@ -100,6 +101,7 @@ export const updateFighter = /* GraphQL */ `mutation UpdateFighter(
     id
     name
     gameId
+    gamePosition
     createdAt
     updatedAt
     tierSlots {
@@ -121,6 +123,7 @@ export const deleteFighter = /* GraphQL */ `mutation DeleteFighter(
     id
     name
     gameId
+    gamePosition
     createdAt
     updatedAt
     tierSlots {

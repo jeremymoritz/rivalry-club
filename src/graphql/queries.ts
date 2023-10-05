@@ -57,6 +57,7 @@ export const getFighter = /* GraphQL */ `query GetFighter($id: ID!) {
     id
     name
     gameId
+    gamePosition
     createdAt
     updatedAt
     tierSlots {
@@ -80,6 +81,7 @@ export const listFighters = /* GraphQL */ `query ListFighters(
       id
       name
       gameId
+      gamePosition
       createdAt
       updatedAt
       __typename
@@ -448,6 +450,7 @@ export const fightersByGameIdAndId = /* GraphQL */ `query FightersByGameIdAndId(
       id
       name
       gameId
+      gamePosition
       createdAt
       updatedAt
       __typename
