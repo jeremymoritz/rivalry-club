@@ -1,0 +1,234 @@
+# GRAPHQL QUERY
+
+
+mutation CreateMultipleTierLists(
+	$tierList1: CreateTierListInput!,
+	$tierList2: CreateTierListInput!,
+	$tierList3: CreateTierListInput!,
+	$tierList4: CreateTierListInput!,
+	$tierList5: CreateTierListInput!,
+	$tierList6: CreateTierListInput!,
+	$tierList7: CreateTierListInput!,
+	$tierList8: CreateTierListInput!,
+	$tierList9: CreateTierListInput!,
+	$tierList10: CreateTierListInput!,
+	$tierList11: CreateTierListInput!,
+	$tierList12: CreateTierListInput!,
+	$tierList13: CreateTierListInput!,
+	$tierList14: CreateTierListInput!,
+	$tierList15: CreateTierListInput!,
+	$tierList16: CreateTierListInput!,
+	$tierList17: CreateTierListInput!,
+	$tierList18: CreateTierListInput!,
+	$tierList19: CreateTierListInput!,
+	$tierList20: CreateTierListInput!,
+	$tierList21: CreateTierListInput!,
+	$tierList22: CreateTierListInput!,
+	$tierList23: CreateTierListInput!,
+	$tierList24: CreateTierListInput!,
+	$tierList25: CreateTierListInput!,
+	$tierList26: CreateTierListInput!,
+	$tierList27: CreateTierListInput!,
+	$tierList28: CreateTierListInput!,
+	$tierList29: CreateTierListInput!,
+	$tierList30: CreateTierListInput!,
+	$tierList31: CreateTierListInput!,
+	$tierList32: CreateTierListInput!,
+	$tierList33: CreateTierListInput!,
+	$tierList34: CreateTierListInput!,
+	$tierList35: CreateTierListInput!,
+	$tierList36: CreateTierListInput!,
+	$tierList37: CreateTierListInput!,
+	$tierList38: CreateTierListInput!,
+	$tierList39: CreateTierListInput!,
+	$tierList40: CreateTierListInput!,
+	$tierList41: CreateTierListInput!,
+	$tierList42: CreateTierListInput!,
+	$tierList43: CreateTierListInput!,
+	$tierList44: CreateTierListInput!,
+	$tierList45: CreateTierListInput!,
+	$tierList46: CreateTierListInput!,
+	$tierList47: CreateTierListInput!,
+	$tierList48: CreateTierListInput!,
+	$tierList49: CreateTierListInput!,
+	$tierList50: CreateTierListInput!,
+	$tierList51: CreateTierListInput!,
+	$tierList52: CreateTierListInput!,
+	$tierList53: CreateTierListInput!,
+	$tierList54: CreateTierListInput!,
+	$tierList55: CreateTierListInput!,
+	$tierList56: CreateTierListInput!,
+	$tierList57: CreateTierListInput!,
+	$tierList58: CreateTierListInput!,
+	$tierList59: CreateTierListInput!,
+	$tierList60: CreateTierListInput!,
+	$tierList61: CreateTierListInput!,
+	$tierList62: CreateTierListInput!,
+	$tierList63: CreateTierListInput!,
+	$tierList64: CreateTierListInput!,
+	$tierList65: CreateTierListInput!,
+	$tierList66: CreateTierListInput!,
+	$tierList67: CreateTierListInput!,
+	$tierList68: CreateTierListInput!,
+	$tierList69: CreateTierListInput!,
+	$tierList70: CreateTierListInput!,
+	$tierList71: CreateTierListInput!,
+	$tierList72: CreateTierListInput!,
+	$tierList73: CreateTierListInput!,
+	$tierList74: CreateTierListInput!,
+) {
+	q1: createTierList(input: $tierList1) { id }
+	q2: createTierList(input: $tierList2) { id }
+	q3: createTierList(input: $tierList3) { id }
+	q4: createTierList(input: $tierList4) { id }
+	q5: createTierList(input: $tierList5) { id }
+	q6: createTierList(input: $tierList6) { id }
+	q7: createTierList(input: $tierList7) { id }
+	q8: createTierList(input: $tierList8) { id }
+	q9: createTierList(input: $tierList9) { id }
+	q10: createTierList(input: $tierList10) { id }
+	q11: createTierList(input: $tierList11) { id }
+	q12: createTierList(input: $tierList12) { id }
+	q13: createTierList(input: $tierList13) { id }
+	q14: createTierList(input: $tierList14) { id }
+	q15: createTierList(input: $tierList15) { id }
+	q16: createTierList(input: $tierList16) { id }
+	q17: createTierList(input: $tierList17) { id }
+	q18: createTierList(input: $tierList18) { id }
+	q19: createTierList(input: $tierList19) { id }
+	q20: createTierList(input: $tierList20) { id }
+	q21: createTierList(input: $tierList21) { id }
+	q22: createTierList(input: $tierList22) { id }
+	q23: createTierList(input: $tierList23) { id }
+	q24: createTierList(input: $tierList24) { id }
+	q25: createTierList(input: $tierList25) { id }
+	q26: createTierList(input: $tierList26) { id }
+	q27: createTierList(input: $tierList27) { id }
+	q28: createTierList(input: $tierList28) { id }
+	q29: createTierList(input: $tierList29) { id }
+	q30: createTierList(input: $tierList30) { id }
+	q31: createTierList(input: $tierList31) { id }
+	q32: createTierList(input: $tierList32) { id }
+	q33: createTierList(input: $tierList33) { id }
+	q34: createTierList(input: $tierList34) { id }
+	q35: createTierList(input: $tierList35) { id }
+	q36: createTierList(input: $tierList36) { id }
+	q37: createTierList(input: $tierList37) { id }
+	q38: createTierList(input: $tierList38) { id }
+	q39: createTierList(input: $tierList39) { id }
+	q40: createTierList(input: $tierList40) { id }
+	q41: createTierList(input: $tierList41) { id }
+	q42: createTierList(input: $tierList42) { id }
+	q43: createTierList(input: $tierList43) { id }
+	q44: createTierList(input: $tierList44) { id }
+	q45: createTierList(input: $tierList45) { id }
+	q46: createTierList(input: $tierList46) { id }
+	q47: createTierList(input: $tierList47) { id }
+	q48: createTierList(input: $tierList48) { id }
+	q49: createTierList(input: $tierList49) { id }
+	q50: createTierList(input: $tierList50) { id }
+	q51: createTierList(input: $tierList51) { id }
+	q52: createTierList(input: $tierList52) { id }
+	q53: createTierList(input: $tierList53) { id }
+	q54: createTierList(input: $tierList54) { id }
+	q55: createTierList(input: $tierList55) { id }
+	q56: createTierList(input: $tierList56) { id }
+	q57: createTierList(input: $tierList57) { id }
+	q58: createTierList(input: $tierList58) { id }
+	q59: createTierList(input: $tierList59) { id }
+	q60: createTierList(input: $tierList60) { id }
+	q61: createTierList(input: $tierList61) { id }
+	q62: createTierList(input: $tierList62) { id }
+	q63: createTierList(input: $tierList63) { id }
+	q64: createTierList(input: $tierList64) { id }
+	q65: createTierList(input: $tierList65) { id }
+	q66: createTierList(input: $tierList66) { id }
+	q67: createTierList(input: $tierList67) { id }
+	q68: createTierList(input: $tierList68) { id }
+	q69: createTierList(input: $tierList69) { id }
+	q70: createTierList(input: $tierList70) { id }
+	q71: createTierList(input: $tierList71) { id }
+	q72: createTierList(input: $tierList72) { id }
+	q73: createTierList(input: $tierList73) { id }
+	q74: createTierList(input: $tierList74) { id }
+}
+
+
+# VARIABLES
+
+{
+  "tierList1": { "id": "48514879-6301-11ee-a22d-169ccb685861", "rivalryId": "484acbf9-6301-11ee-a22d-169ccb685861", "userId": "cc0849eb-2875-4baa-bbd1-48cbba8ee471", "standing": 1, "createdAt": "2021-12-31T00:14:36Z", "updatedAt": "2023-10-06T06:02:43Z" },
+  "tierList2": { "id": "48514be0-6301-11ee-a22d-169ccb685861", "rivalryId": "484acbf9-6301-11ee-a22d-169ccb685861", "userId": "3f539aff-9c94-4d69-926a-8eab083aa39f", "standing": 28, "createdAt": "2021-12-31T00:14:36Z", "updatedAt": "2023-10-06T05:59:32Z" },
+  "tierList3": { "id": "48514cab-6301-11ee-a22d-169ccb685861", "rivalryId": "484acf02-6301-11ee-a22d-169ccb685861", "userId": "cc0849eb-2875-4baa-bbd1-48cbba8ee471", "standing": 4, "createdAt": "2021-12-31T00:14:37Z", "updatedAt": "2023-09-06T02:30:09Z" },
+  "tierList4": { "id": "48514d38-6301-11ee-a22d-169ccb685861", "rivalryId": "484acf02-6301-11ee-a22d-169ccb685861", "userId": "ee3fe840-7645-4a77-b4f6-763bc30e07ee", "standing": 7, "createdAt": "2021-12-31T00:14:37Z", "updatedAt": "2023-09-06T02:30:09Z" },
+  "tierList5": { "id": "48514df2-6301-11ee-a22d-169ccb685861", "rivalryId": "484acff2-6301-11ee-a22d-169ccb685861", "userId": "cc0849eb-2875-4baa-bbd1-48cbba8ee471", "standing": 20, "createdAt": "2022-01-08T18:29:44Z", "updatedAt": "2022-01-10T21:46:34Z" },
+  "tierList6": { "id": "48514e7b-6301-11ee-a22d-169ccb685861", "rivalryId": "484acff2-6301-11ee-a22d-169ccb685861", "userId": "70c258cd-9e92-413e-b7b6-bdc0e473bebf", "standing": 1, "createdAt": "2022-01-08T18:29:44Z", "updatedAt": "2022-01-10T21:46:34Z" },
+  "tierList7": { "id": "48514ef6-6301-11ee-a22d-169ccb685861", "rivalryId": "484ad09d-6301-11ee-a22d-169ccb685861", "userId": "3f539aff-9c94-4d69-926a-8eab083aa39f", "standing": 10, "createdAt": "2022-01-22T04:31:01Z", "updatedAt": "2023-05-10T03:57:24Z" },
+  "tierList8": { "id": "48514f75-6301-11ee-a22d-169ccb685861", "rivalryId": "484ad09d-6301-11ee-a22d-169ccb685861", "userId": "ee3fe840-7645-4a77-b4f6-763bc30e07ee", "standing": 4, "createdAt": "2022-01-22T04:31:01Z", "updatedAt": "2023-05-10T03:57:24Z" },
+  "tierList9": { "id": "48514fee-6301-11ee-a22d-169ccb685861", "rivalryId": "484ad139-6301-11ee-a22d-169ccb685861", "userId": "0ad18812-b18e-41af-8331-d46bd18686e2", "standing": 2, "createdAt": "2022-01-28T02:17:49Z", "updatedAt": "2023-10-07T03:51:48Z" },
+  "tierList10": { "id": "4851507e-6301-11ee-a22d-169ccb685861", "rivalryId": "484ad139-6301-11ee-a22d-169ccb685861", "userId": "cc0849eb-2875-4baa-bbd1-48cbba8ee471", "standing": 25, "createdAt": "2022-01-28T02:17:49Z", "updatedAt": "2023-10-07T03:51:48Z" },
+  "tierList11": { "id": "485150f9-6301-11ee-a22d-169ccb685861", "rivalryId": "484ad1d2-6301-11ee-a22d-169ccb685861", "userId": "48ae8e59-6301-11ee-a22d-169ccb685861", "standing": 0, "createdAt": "2022-01-29T15:43:01Z", "updatedAt": "2022-01-31T21:47:21Z", "deletedAt": "2022-01-31T21:47:21Z" },
+  "tierList12": { "id": "48515187-6301-11ee-a22d-169ccb685861", "rivalryId": "484ad1d2-6301-11ee-a22d-169ccb685861", "userId": "ee3fe840-7645-4a77-b4f6-763bc30e07ee", "standing": 0, "createdAt": "2022-01-29T15:43:01Z", "updatedAt": "2022-01-31T21:47:21Z", "deletedAt": "2022-01-31T21:47:21Z" },
+  "tierList13": { "id": "4851520a-6301-11ee-a22d-169ccb685861", "rivalryId": "484ad285-6301-11ee-a22d-169ccb685861", "userId": "48ae8ef0-6301-11ee-a22d-169ccb685861", "standing": 1, "createdAt": "2022-01-29T15:46:46Z", "updatedAt": "2022-01-29T16:02:26Z" },
+  "tierList14": { "id": "48515283-6301-11ee-a22d-169ccb685861", "rivalryId": "484ad285-6301-11ee-a22d-169ccb685861", "userId": "48ae8e59-6301-11ee-a22d-169ccb685861", "standing": 0, "createdAt": "2022-01-29T15:46:46Z", "updatedAt": "2022-01-29T15:46:46Z" },
+  "tierList15": { "id": "485152fc-6301-11ee-a22d-169ccb685861", "rivalryId": "484ad325-6301-11ee-a22d-169ccb685861", "userId": "970b1608-3bd6-4805-babb-af32ae75266b", "standing": 0, "createdAt": "2022-01-29T15:49:34Z", "updatedAt": "2022-05-30T18:25:11Z", "deletedAt": "2022-05-30T18:25:11Z" },
+  "tierList16": { "id": "4851537e-6301-11ee-a22d-169ccb685861", "rivalryId": "484ad325-6301-11ee-a22d-169ccb685861", "userId": "48ae8e59-6301-11ee-a22d-169ccb685861", "standing": 0, "createdAt": "2022-01-29T15:49:34Z", "updatedAt": "2022-05-30T18:25:11Z", "deletedAt": "2022-05-30T18:25:11Z" },
+  "tierList17": { "id": "485153f3-6301-11ee-a22d-169ccb685861", "rivalryId": "484ad3c9-6301-11ee-a22d-169ccb685861", "userId": "970b1608-3bd6-4805-babb-af32ae75266b", "standing": 2, "createdAt": "2022-01-29T15:50:56Z", "updatedAt": "2022-03-14T23:08:16Z" },
+  "tierList18": { "id": "4851546e-6301-11ee-a22d-169ccb685861", "rivalryId": "484ad3c9-6301-11ee-a22d-169ccb685861", "userId": "48ae8ef0-6301-11ee-a22d-169ccb685861", "standing": 1, "createdAt": "2022-01-29T15:50:56Z", "updatedAt": "2022-03-14T23:08:16Z" },
+  "tierList19": { "id": "485154f2-6301-11ee-a22d-169ccb685861", "rivalryId": "484ad472-6301-11ee-a22d-169ccb685861", "userId": "ee3fe840-7645-4a77-b4f6-763bc30e07ee", "standing": 43, "createdAt": "2022-01-30T22:25:26Z", "updatedAt": "2022-03-21T04:05:02Z" },
+  "tierList20": { "id": "4851556a-6301-11ee-a22d-169ccb685861", "rivalryId": "484ad472-6301-11ee-a22d-169ccb685861", "userId": "0ad18812-b18e-41af-8331-d46bd18686e2", "standing": 3, "createdAt": "2022-01-30T22:25:26Z", "updatedAt": "2022-03-21T04:05:02Z" },
+  "tierList21": { "id": "485155e1-6301-11ee-a22d-169ccb685861", "rivalryId": "484ad50b-6301-11ee-a22d-169ccb685861", "userId": "9d658b9a-bc56-42db-8686-8dde85dec832", "standing": 1, "createdAt": "2022-01-31T21:53:15Z", "updatedAt": "2022-03-14T23:24:12Z" },
+  "tierList22": { "id": "48515654-6301-11ee-a22d-169ccb685861", "rivalryId": "484ad50b-6301-11ee-a22d-169ccb685861", "userId": "970b1608-3bd6-4805-babb-af32ae75266b", "standing": 28, "createdAt": "2022-01-31T21:53:15Z", "updatedAt": "2022-03-14T23:24:12Z" },
+  "tierList23": { "id": "485156c9-6301-11ee-a22d-169ccb685861", "rivalryId": "484ad5a4-6301-11ee-a22d-169ccb685861", "userId": "48ae90cb-6301-11ee-a22d-169ccb685861", "standing": 2, "createdAt": "2022-02-01T19:34:03Z", "updatedAt": "2022-02-04T16:25:25Z", "deletedAt": "2022-02-04T16:25:25Z" },
+  "tierList24": { "id": "48515740-6301-11ee-a22d-169ccb685861", "rivalryId": "484ad5a4-6301-11ee-a22d-169ccb685861", "userId": "48ae9160-6301-11ee-a22d-169ccb685861", "standing": 2, "createdAt": "2022-02-01T19:34:03Z", "updatedAt": "2022-02-04T16:25:25Z", "deletedAt": "2022-02-04T16:25:25Z" },
+  "tierList25": { "id": "485157b6-6301-11ee-a22d-169ccb685861", "rivalryId": "484ad63c-6301-11ee-a22d-169ccb685861", "userId": "3f539aff-9c94-4d69-926a-8eab083aa39f", "standing": 0, "createdAt": "2022-02-01T20:09:11Z", "updatedAt": "2022-02-04T16:24:02Z", "deletedAt": "2022-02-04T16:24:02Z" },
+  "tierList26": { "id": "4851582d-6301-11ee-a22d-169ccb685861", "rivalryId": "484ad63c-6301-11ee-a22d-169ccb685861", "userId": "48ae90cb-6301-11ee-a22d-169ccb685861", "standing": 0, "createdAt": "2022-02-01T20:09:11Z", "updatedAt": "2022-02-04T16:24:02Z", "deletedAt": "2022-02-04T16:24:02Z" },
+  "tierList27": { "id": "485158b9-6301-11ee-a22d-169ccb685861", "rivalryId": "484ad6d4-6301-11ee-a22d-169ccb685861", "userId": "e674198e-0416-427f-8295-3cd4d584acc8", "standing": 1, "createdAt": "2022-02-03T04:20:12Z", "updatedAt": "2023-05-03T17:59:39Z" },
+  "tierList28": { "id": "48515937-6301-11ee-a22d-169ccb685861", "rivalryId": "484ad6d4-6301-11ee-a22d-169ccb685861", "userId": "683f0f4a-7968-44b8-80d7-0ef4495822f9", "standing": 4, "createdAt": "2022-02-03T04:20:12Z", "updatedAt": "2023-05-03T18:04:14Z" },
+  "tierList29": { "id": "485159ab-6301-11ee-a22d-169ccb685861", "rivalryId": "484ad771-6301-11ee-a22d-169ccb685861", "userId": "48ae9456-6301-11ee-a22d-169ccb685861", "standing": 2, "createdAt": "2022-02-03T17:42:59Z", "updatedAt": "2022-02-03T19:08:15Z" },
+  "tierList30": { "id": "48515a20-6301-11ee-a22d-169ccb685861", "rivalryId": "484ad771-6301-11ee-a22d-169ccb685861", "userId": "683f0f4a-7968-44b8-80d7-0ef4495822f9", "standing": 1, "createdAt": "2022-02-03T17:42:59Z", "updatedAt": "2022-02-03T19:15:34Z" },
+  "tierList31": { "id": "48515a96-6301-11ee-a22d-169ccb685861", "rivalryId": "484ad805-6301-11ee-a22d-169ccb685861", "userId": "0ad18812-b18e-41af-8331-d46bd18686e2", "standing": 0, "createdAt": "2022-02-06T02:06:43Z", "updatedAt": "2022-02-06T02:08:12Z", "deletedAt": "2022-02-06T02:08:12Z" },
+  "tierList32": { "id": "48515b0f-6301-11ee-a22d-169ccb685861", "rivalryId": "484ad805-6301-11ee-a22d-169ccb685861", "userId": "3f539aff-9c94-4d69-926a-8eab083aa39f", "standing": 0, "createdAt": "2022-02-06T02:06:43Z", "updatedAt": "2022-02-06T02:08:12Z", "deletedAt": "2022-02-06T02:08:12Z" },
+  "tierList33": { "id": "48515b88-6301-11ee-a22d-169ccb685861", "rivalryId": "484ad89b-6301-11ee-a22d-169ccb685861", "userId": "3f539aff-9c94-4d69-926a-8eab083aa39f", "standing": 41, "createdAt": "2022-02-06T02:08:44Z", "updatedAt": "2023-09-30T22:01:26Z" },
+  "tierList34": { "id": "48515bfc-6301-11ee-a22d-169ccb685861", "rivalryId": "484ad89b-6301-11ee-a22d-169ccb685861", "userId": "0ad18812-b18e-41af-8331-d46bd18686e2", "standing": 6, "createdAt": "2022-02-06T02:08:44Z", "updatedAt": "2023-09-30T22:07:36Z" },
+  "tierList35": { "id": "48515c70-6301-11ee-a22d-169ccb685861", "rivalryId": "484ad938-6301-11ee-a22d-169ccb685861", "userId": "ed81f2f9-5e95-43fb-b2c8-62673eb266b1", "standing": 1, "createdAt": "2022-02-07T00:15:59Z", "updatedAt": "2022-06-11T15:51:38Z" },
+  "tierList36": { "id": "48515cf7-6301-11ee-a22d-169ccb685861", "rivalryId": "484ad938-6301-11ee-a22d-169ccb685861", "userId": "cc0849eb-2875-4baa-bbd1-48cbba8ee471", "standing": 32, "createdAt": "2022-02-07T00:15:59Z", "updatedAt": "2022-06-11T15:55:38Z" },
+  "tierList37": { "id": "48515d71-6301-11ee-a22d-169ccb685861", "rivalryId": "484ad9cd-6301-11ee-a22d-169ccb685861", "userId": "48ae9586-6301-11ee-a22d-169ccb685861", "standing": 0, "createdAt": "2022-02-09T01:38:30Z", "updatedAt": "2022-02-09T01:38:30Z" },
+  "tierList38": { "id": "48515de4-6301-11ee-a22d-169ccb685861", "rivalryId": "484ad9cd-6301-11ee-a22d-169ccb685861", "userId": "ee3fe840-7645-4a77-b4f6-763bc30e07ee", "standing": 27, "createdAt": "2022-02-09T01:38:30Z", "updatedAt": "2022-02-09T02:00:04Z" },
+  "tierList39": { "id": "48515e59-6301-11ee-a22d-169ccb685861", "rivalryId": "484ada64-6301-11ee-a22d-169ccb685861", "userId": "1bbdd3b7-8614-4fc5-9645-50ae6072932f", "standing": 1, "createdAt": "2022-02-22T01:44:09Z", "updatedAt": "2022-06-11T00:14:55Z" },
+  "tierList40": { "id": "48515ecd-6301-11ee-a22d-169ccb685861", "rivalryId": "484ada64-6301-11ee-a22d-169ccb685861", "userId": "cc0849eb-2875-4baa-bbd1-48cbba8ee471", "standing": 23, "createdAt": "2022-02-22T01:44:09Z", "updatedAt": "2022-06-11T00:09:58Z" },
+  "tierList41": { "id": "48515f45-6301-11ee-a22d-169ccb685861", "rivalryId": "484adaf9-6301-11ee-a22d-169ccb685861", "userId": "683f0f4a-7968-44b8-80d7-0ef4495822f9", "standing": 0, "createdAt": "2022-03-06T20:37:34Z", "updatedAt": "2022-05-30T18:24:47Z", "deletedAt": "2022-05-30T18:24:47Z" },
+  "tierList42": { "id": "48515fba-6301-11ee-a22d-169ccb685861", "rivalryId": "484adaf9-6301-11ee-a22d-169ccb685861", "userId": "48ae9586-6301-11ee-a22d-169ccb685861", "standing": 0, "createdAt": "2022-03-06T20:37:34Z", "updatedAt": "2022-05-30T18:24:47Z", "deletedAt": "2022-05-30T18:24:47Z" },
+  "tierList43": { "id": "48516033-6301-11ee-a22d-169ccb685861", "rivalryId": "484adb90-6301-11ee-a22d-169ccb685861", "userId": "683f0f4a-7968-44b8-80d7-0ef4495822f9", "standing": 0, "createdAt": "2022-03-06T20:37:49Z", "updatedAt": "2022-05-30T18:25:02Z", "deletedAt": "2022-05-30T18:25:02Z" },
+  "tierList44": { "id": "485160ac-6301-11ee-a22d-169ccb685861", "rivalryId": "484adb90-6301-11ee-a22d-169ccb685861", "userId": "ee3fe840-7645-4a77-b4f6-763bc30e07ee", "standing": 0, "createdAt": "2022-03-06T20:37:49Z", "updatedAt": "2022-05-30T18:25:02Z", "deletedAt": "2022-05-30T18:25:02Z" },
+  "tierList45": { "id": "48516127-6301-11ee-a22d-169ccb685861", "rivalryId": "484adc2a-6301-11ee-a22d-169ccb685861", "userId": "48ae8e59-6301-11ee-a22d-169ccb685861", "standing": 1, "createdAt": "2022-04-09T21:26:38Z", "updatedAt": "2022-04-09T21:42:00Z" },
+  "tierList46": { "id": "4851619d-6301-11ee-a22d-169ccb685861", "rivalryId": "484adc2a-6301-11ee-a22d-169ccb685861", "userId": "ee3fe840-7645-4a77-b4f6-763bc30e07ee", "standing": 2, "createdAt": "2022-04-09T21:26:38Z", "updatedAt": "2022-04-09T21:44:58Z" },
+  "tierList47": { "id": "48516212-6301-11ee-a22d-169ccb685861", "rivalryId": "484adcbe-6301-11ee-a22d-169ccb685861", "userId": "5a4dca28-79b6-48f0-8fa4-6731db145409", "standing": 0, "createdAt": "2022-04-27T21:29:12Z", "updatedAt": "2022-04-27T21:29:12Z" },
+  "tierList48": { "id": "48516284-6301-11ee-a22d-169ccb685861", "rivalryId": "484adcbe-6301-11ee-a22d-169ccb685861", "userId": "3f539aff-9c94-4d69-926a-8eab083aa39f", "standing": 38, "createdAt": "2022-04-27T21:29:12Z", "updatedAt": "2022-06-23T16:46:36Z" },
+  "tierList49": { "id": "485162f5-6301-11ee-a22d-169ccb685861", "rivalryId": "484add53-6301-11ee-a22d-169ccb685861", "userId": "cc0849eb-2875-4baa-bbd1-48cbba8ee471", "standing": 10, "createdAt": "2022-05-04T06:20:21Z", "updatedAt": "2022-05-05T03:44:21Z" },
+  "tierList50": { "id": "48516368-6301-11ee-a22d-169ccb685861", "rivalryId": "484add53-6301-11ee-a22d-169ccb685861", "userId": "48aea4b5-6301-11ee-a22d-169ccb685861", "standing": 0, "createdAt": "2022-05-04T06:20:21Z", "updatedAt": "2022-05-05T03:32:58Z" },
+  "tierList51": { "id": "485163da-6301-11ee-a22d-169ccb685861", "rivalryId": "484adde9-6301-11ee-a22d-169ccb685861", "userId": "48aea780-6301-11ee-a22d-169ccb685861", "standing": 16, "createdAt": "2022-05-05T02:42:54Z", "updatedAt": "2022-05-05T03:35:44Z" },
+  "tierList52": { "id": "4851644d-6301-11ee-a22d-169ccb685861", "rivalryId": "484adde9-6301-11ee-a22d-169ccb685861", "userId": "cc0849eb-2875-4baa-bbd1-48cbba8ee471", "standing": 2, "createdAt": "2022-05-05T02:42:54Z", "updatedAt": "2022-05-05T03:35:44Z" },
+  "tierList53": { "id": "485164be-6301-11ee-a22d-169ccb685861", "rivalryId": "484ade7c-6301-11ee-a22d-169ccb685861", "userId": "48aea4b5-6301-11ee-a22d-169ccb685861", "standing": 0, "createdAt": "2022-05-05T02:54:06Z", "updatedAt": "2022-05-05T03:40:52Z" },
+  "tierList54": { "id": "48516537-6301-11ee-a22d-169ccb685861", "rivalryId": "484ade7c-6301-11ee-a22d-169ccb685861", "userId": "48aea780-6301-11ee-a22d-169ccb685861", "standing": 22, "createdAt": "2022-05-05T02:54:06Z", "updatedAt": "2022-05-05T03:30:11Z" },
+  "tierList55": { "id": "485165ab-6301-11ee-a22d-169ccb685861", "rivalryId": "484adf0f-6301-11ee-a22d-169ccb685861", "userId": "48aea80d-6301-11ee-a22d-169ccb685861", "standing": 0, "createdAt": "2022-05-05T21:37:12Z", "updatedAt": "2022-05-05T21:37:12Z" },
+  "tierList56": { "id": "4851661f-6301-11ee-a22d-169ccb685861", "rivalryId": "484adf0f-6301-11ee-a22d-169ccb685861", "userId": "cc0849eb-2875-4baa-bbd1-48cbba8ee471", "standing": 24, "createdAt": "2022-05-05T21:37:12Z", "updatedAt": "2022-05-05T21:50:17Z" },
+  "tierList57": { "id": "48516690-6301-11ee-a22d-169ccb685861", "rivalryId": "484adfa5-6301-11ee-a22d-169ccb685861", "userId": "3f539aff-9c94-4d69-926a-8eab083aa39f", "standing": 35, "createdAt": "2022-07-10T15:31:05Z", "updatedAt": "2022-07-23T15:40:40Z" },
+  "tierList58": { "id": "48516700-6301-11ee-a22d-169ccb685861", "rivalryId": "484adfa5-6301-11ee-a22d-169ccb685861", "userId": "ed81f2f9-5e95-43fb-b2c8-62673eb266b1", "standing": 0, "createdAt": "2022-07-10T15:31:05Z", "updatedAt": "2022-07-10T15:31:05Z" },
+  "tierList59": { "id": "48516775-6301-11ee-a22d-169ccb685861", "rivalryId": "484ae037-6301-11ee-a22d-169ccb685861", "userId": "48af2228-6301-11ee-a22d-169ccb685861", "standing": 0, "createdAt": "2022-07-29T22:25:47Z", "updatedAt": "2022-07-29T22:25:47Z" },
+  "tierList60": { "id": "485167e9-6301-11ee-a22d-169ccb685861", "rivalryId": "484ae037-6301-11ee-a22d-169ccb685861", "userId": "970b1608-3bd6-4805-babb-af32ae75266b", "standing": 14, "createdAt": "2022-07-29T22:25:47Z", "updatedAt": "2022-07-30T12:47:05Z" },
+  "tierList61": { "id": "48516859-6301-11ee-a22d-169ccb685861", "rivalryId": "484ae0cb-6301-11ee-a22d-169ccb685861", "userId": "3f539aff-9c94-4d69-926a-8eab083aa39f", "standing": 21, "createdAt": "2022-08-01T22:39:15Z", "updatedAt": "2022-08-01T22:39:19Z" },
+  "tierList62": { "id": "485168cb-6301-11ee-a22d-169ccb685861", "rivalryId": "484ae0cb-6301-11ee-a22d-169ccb685861", "userId": "48ae8e59-6301-11ee-a22d-169ccb685861", "standing": 0, "createdAt": "2022-08-01T22:39:15Z", "updatedAt": "2022-08-01T22:39:15Z" },
+  "tierList63": { "id": "48516943-6301-11ee-a22d-169ccb685861", "rivalryId": "484ae167-6301-11ee-a22d-169ccb685861", "userId": "ab384357-258d-4cce-815c-02ca07eb2c44", "standing": 1, "createdAt": "2022-08-22T18:42:36Z", "updatedAt": "2022-08-22T19:15:11Z" },
+  "tierList64": { "id": "485169b6-6301-11ee-a22d-169ccb685861", "rivalryId": "484ae167-6301-11ee-a22d-169ccb685861", "userId": "3f539aff-9c94-4d69-926a-8eab083aa39f", "standing": 32, "createdAt": "2022-08-22T18:42:36Z", "updatedAt": "2022-08-22T19:18:36Z" },
+  "tierList65": { "id": "48516a2c-6301-11ee-a22d-169ccb685861", "rivalryId": "484ae203-6301-11ee-a22d-169ccb685861", "userId": "fd042f02-cbb1-42cb-ab11-a4e63f6227d2", "standing": 18, "createdAt": "2022-09-06T15:36:02Z", "updatedAt": "2022-09-13T19:05:04Z" },
+  "tierList66": { "id": "48516a9c-6301-11ee-a22d-169ccb685861", "rivalryId": "484ae203-6301-11ee-a22d-169ccb685861", "userId": "3f539aff-9c94-4d69-926a-8eab083aa39f", "standing": 5, "createdAt": "2022-09-06T15:36:02Z", "updatedAt": "2022-09-13T18:52:00Z" },
+  "tierList67": { "id": "48516ba7-6301-11ee-a22d-169ccb685861", "rivalryId": "484ae2ac-6301-11ee-a22d-169ccb685861", "userId": "48af32d5-6301-11ee-a22d-169ccb685861", "standing": 6, "createdAt": "2022-09-22T00:07:34Z", "updatedAt": "2022-09-22T00:16:04Z" },
+  "tierList68": { "id": "48516c2c-6301-11ee-a22d-169ccb685861", "rivalryId": "484ae2ac-6301-11ee-a22d-169ccb685861", "userId": "48af336e-6301-11ee-a22d-169ccb685861", "standing": 3, "createdAt": "2022-09-22T00:07:34Z", "updatedAt": "2022-09-22T00:16:04Z" },
+  "tierList69": { "id": "48516cb3-6301-11ee-a22d-169ccb685861", "rivalryId": "484ae344-6301-11ee-a22d-169ccb685861", "userId": "1a47499b-0288-4515-9ec6-2a3265bc700a", "standing": 0, "createdAt": "2023-01-18T03:04:29Z", "updatedAt": "2023-01-18T04:38:37Z" },
+  "tierList70": { "id": "48516d40-6301-11ee-a22d-169ccb685861", "rivalryId": "484ae344-6301-11ee-a22d-169ccb685861", "userId": "3f539aff-9c94-4d69-926a-8eab083aa39f", "standing": 30, "createdAt": "2023-01-18T03:04:29Z", "updatedAt": "2023-01-18T04:50:34Z" },
+  "tierList71": { "id": "48516dec-6301-11ee-a22d-169ccb685861", "rivalryId": "484ae3dc-6301-11ee-a22d-169ccb685861", "userId": "1bcfd495-f6fe-43e7-86db-345ae62dfc2f", "standing": 0, "createdAt": "2023-02-19T00:45:44Z", "updatedAt": "2023-02-21T22:43:28Z" },
+  "tierList72": { "id": "48516e7f-6301-11ee-a22d-169ccb685861", "rivalryId": "484ae3dc-6301-11ee-a22d-169ccb685861", "userId": "cc0849eb-2875-4baa-bbd1-48cbba8ee471", "standing": 33, "createdAt": "2023-02-19T00:45:44Z", "updatedAt": "2023-02-21T22:50:46Z" },
+  "tierList73": { "id": "48516f00-6301-11ee-a22d-169ccb685861", "rivalryId": "484ae474-6301-11ee-a22d-169ccb685861", "userId": "1bcfd495-f6fe-43e7-86db-345ae62dfc2f", "standing": 0, "createdAt": "2023-02-19T01:01:39Z", "updatedAt": "2023-02-19T01:30:39Z" },
+  "tierList74": { "id": "48516f7f-6301-11ee-a22d-169ccb685861", "rivalryId": "484ae474-6301-11ee-a22d-169ccb685861", "userId": "0ad18812-b18e-41af-8331-d46bd18686e2", "standing": 1, "createdAt": "2023-02-19T01:01:39Z", "updatedAt": "2023-02-19T01:22:11Z" },
+}

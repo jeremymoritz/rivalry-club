@@ -5,9 +5,9 @@ input AMPLIFY {
 } # FOR TESTING ONLY!
 type Contest @model {
   id: ID!
-  rivalryId: ID! @index(name: "byRivalry", sortKeyFields: ["id"])
-  tierSlotAId: ID! @index(name: "byTierSlotA", sortKeyFields: ["id"])
-  tierSlotBId: ID! @index(name: "byTierSlotB", sortKeyFields: ["id"])
+  rivalryId: ID! @index(name: "byRivalry", sortKeyFields: ["createdAt"])
+  tierSlotAId: ID!
+  tierSlotBId: ID!
   result: Int
   bias: Int
 
@@ -19,7 +19,7 @@ type Contest @model {
 type Fighter @model {
   id: ID!
   name: String!
-  gameId: ID! @index(name: "byGame", sortKeyFields: ["id"])
+  gameId: ID! @index(name: "byGame", sortKeyFields: ["gamePosition", "name"])
   gamePosition: Int
 
   createdAt: AWSDateTime!
@@ -42,9 +42,9 @@ type Game @model {
 
 type Rivalry @model {
   id: ID!
-  userAId: ID! @index(name: "byUserA", sortKeyFields: ["id"])
-  userBId: ID! @index(name: "byUserB", sortKeyFields: ["id"])
-  gameId: ID! @index(name: "byGame", sortKeyFields: ["id"])
+  userAId: ID! @index(name: "byUserA", sortKeyFields: ["updatedAt"])
+  userBId: ID! @index(name: "byUserB", sortKeyFields: ["updatedAt"])
+  gameId: ID! @index(name: "byGame", sortKeyFields: ["updatedAt"])
 
   createdAt: AWSDateTime!
   updatedAt: AWSDateTime!
@@ -56,8 +56,8 @@ type Rivalry @model {
 
 type TierList @model {
   id: ID!
-  rivalryId: ID! @index(name: "byRivalry", sortKeyFields: ["id"])
-  userId: ID! @index(name: "byUser", sortKeyFields: ["id"])
+  rivalryId: ID! @index(name: "byRivalry", sortKeyFields: ["createdAt"])
+  userId: ID! @index(name: "byUser", sortKeyFields: ["createdAt"])
   standing: Int
 
   createdAt: AWSDateTime!
@@ -69,8 +69,8 @@ type TierList @model {
 
 type TierSlot @model {
   id: ID!
-  tierListId: ID! @index(name: "byTierList", sortKeyFields: ["id"])
-  fighterId: ID! @index(name: "byFighter", sortKeyFields: ["id"])
+  tierListId: ID! @index(name: "byTierList", sortKeyFields: ["position"])
+  fighterId: ID! @index(name: "byFighter", sortKeyFields: ["position"])
   position: Int
 
   createdAt: AWSDateTime!

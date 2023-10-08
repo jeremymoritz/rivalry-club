@@ -1,0 +1,123 @@
+# GRAPHQL QUERY
+
+
+mutation CreateMultipleRivalries(
+	$rivalry1: CreateRivalryInput!,
+	$rivalry2: CreateRivalryInput!,
+	$rivalry3: CreateRivalryInput!,
+	$rivalry4: CreateRivalryInput!,
+	$rivalry5: CreateRivalryInput!,
+	$rivalry6: CreateRivalryInput!,
+	$rivalry7: CreateRivalryInput!,
+	$rivalry8: CreateRivalryInput!,
+	$rivalry9: CreateRivalryInput!,
+	$rivalry10: CreateRivalryInput!,
+	$rivalry11: CreateRivalryInput!,
+	$rivalry12: CreateRivalryInput!,
+	$rivalry13: CreateRivalryInput!,
+	$rivalry14: CreateRivalryInput!,
+	$rivalry15: CreateRivalryInput!,
+	$rivalry16: CreateRivalryInput!,
+	$rivalry17: CreateRivalryInput!,
+	$rivalry18: CreateRivalryInput!,
+	$rivalry19: CreateRivalryInput!,
+	$rivalry20: CreateRivalryInput!,
+	$rivalry21: CreateRivalryInput!,
+	$rivalry22: CreateRivalryInput!,
+	$rivalry23: CreateRivalryInput!,
+	$rivalry24: CreateRivalryInput!,
+	$rivalry25: CreateRivalryInput!,
+	$rivalry26: CreateRivalryInput!,
+	$rivalry27: CreateRivalryInput!,
+	$rivalry28: CreateRivalryInput!,
+	$rivalry29: CreateRivalryInput!,
+	$rivalry30: CreateRivalryInput!,
+	$rivalry31: CreateRivalryInput!,
+	$rivalry32: CreateRivalryInput!,
+	$rivalry33: CreateRivalryInput!,
+	$rivalry34: CreateRivalryInput!,
+	$rivalry35: CreateRivalryInput!,
+	$rivalry36: CreateRivalryInput!,
+	$rivalry37: CreateRivalryInput!,
+) {
+	q1: createRivalry(input: $rivalry1) { id }
+	q2: createRivalry(input: $rivalry2) { id }
+	q3: createRivalry(input: $rivalry3) { id }
+	q4: createRivalry(input: $rivalry4) { id }
+	q5: createRivalry(input: $rivalry5) { id }
+	q6: createRivalry(input: $rivalry6) { id }
+	q7: createRivalry(input: $rivalry7) { id }
+	q8: createRivalry(input: $rivalry8) { id }
+	q9: createRivalry(input: $rivalry9) { id }
+	q10: createRivalry(input: $rivalry10) { id }
+	q11: createRivalry(input: $rivalry11) { id }
+	q12: createRivalry(input: $rivalry12) { id }
+	q13: createRivalry(input: $rivalry13) { id }
+	q14: createRivalry(input: $rivalry14) { id }
+	q15: createRivalry(input: $rivalry15) { id }
+	q16: createRivalry(input: $rivalry16) { id }
+	q17: createRivalry(input: $rivalry17) { id }
+	q18: createRivalry(input: $rivalry18) { id }
+	q19: createRivalry(input: $rivalry19) { id }
+	q20: createRivalry(input: $rivalry20) { id }
+	q21: createRivalry(input: $rivalry21) { id }
+	q22: createRivalry(input: $rivalry22) { id }
+	q23: createRivalry(input: $rivalry23) { id }
+	q24: createRivalry(input: $rivalry24) { id }
+	q25: createRivalry(input: $rivalry25) { id }
+	q26: createRivalry(input: $rivalry26) { id }
+	q27: createRivalry(input: $rivalry27) { id }
+	q28: createRivalry(input: $rivalry28) { id }
+	q29: createRivalry(input: $rivalry29) { id }
+	q30: createRivalry(input: $rivalry30) { id }
+	q31: createRivalry(input: $rivalry31) { id }
+	q32: createRivalry(input: $rivalry32) { id }
+	q33: createRivalry(input: $rivalry33) { id }
+	q34: createRivalry(input: $rivalry34) { id }
+	q35: createRivalry(input: $rivalry35) { id }
+	q36: createRivalry(input: $rivalry36) { id }
+	q37: createRivalry(input: $rivalry37) { id }
+}
+
+
+# VARIABLES
+
+{
+	"rivalry1": { "id": "484acbf9-6301-11ee-a22d-169ccb685861", "userAId": "cc0849eb-2875-4baa-bbd1-48cbba8ee471", "userBId": "3f539aff-9c94-4d69-926a-8eab083aa39f", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a", "createdAt": "2021-12-31T00:14:36Z", "updatedAt": "2023-10-06T06:02:44Z" },
+	"rivalry2": { "id": "484acf02-6301-11ee-a22d-169ccb685861", "userAId": "cc0849eb-2875-4baa-bbd1-48cbba8ee471", "userBId": "ee3fe840-7645-4a77-b4f6-763bc30e07ee", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a", "createdAt": "2021-12-31T00:14:37Z", "updatedAt": "2023-09-06T02:30:09Z" },
+	"rivalry3": { "id": "484acff2-6301-11ee-a22d-169ccb685861", "userAId": "cc0849eb-2875-4baa-bbd1-48cbba8ee471", "userBId": "70c258cd-9e92-413e-b7b6-bdc0e473bebf", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a", "createdAt": "2022-01-08T18:29:44Z", "updatedAt": "2022-06-26T19:04:40Z" },
+	"rivalry4": { "id": "484ad09d-6301-11ee-a22d-169ccb685861", "userAId": "3f539aff-9c94-4d69-926a-8eab083aa39f", "userBId": "ee3fe840-7645-4a77-b4f6-763bc30e07ee", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a", "createdAt": "2022-01-22T04:31:01Z", "updatedAt": "2023-05-10T03:57:25Z" },
+	"rivalry5": { "id": "484ad139-6301-11ee-a22d-169ccb685861", "userAId": "0ad18812-b18e-41af-8331-d46bd18686e2", "userBId": "cc0849eb-2875-4baa-bbd1-48cbba8ee471", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a", "createdAt": "2022-01-28T02:17:49Z", "updatedAt": "2023-10-07T03:51:48Z" },
+	"rivalry6": { "id": "484ad1d2-6301-11ee-a22d-169ccb685861", "userAId": "48ae8e59-6301-11ee-a22d-169ccb685861", "userBId": "ee3fe840-7645-4a77-b4f6-763bc30e07ee", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a", "createdAt": "2022-01-29T15:43:01Z", "updatedAt": "2022-01-31T21:47:21Z", "deletedAt": "2022-01-31T21:47:21Z" },
+	"rivalry7": { "id": "484ad285-6301-11ee-a22d-169ccb685861", "userAId": "48ae8ef0-6301-11ee-a22d-169ccb685861", "userBId": "48ae8e59-6301-11ee-a22d-169ccb685861", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a", "createdAt": "2022-01-29T15:46:46Z", "updatedAt": "2022-01-29T16:02:26Z" },
+	"rivalry8": { "id": "484ad325-6301-11ee-a22d-169ccb685861", "userAId": "970b1608-3bd6-4805-babb-af32ae75266b", "userBId": "48ae8e59-6301-11ee-a22d-169ccb685861", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a", "createdAt": "2022-01-29T15:49:34Z", "updatedAt": "2022-05-30T18:25:11Z", "deletedAt": "2022-05-30T18:25:11Z" },
+	"rivalry9": { "id": "484ad3c9-6301-11ee-a22d-169ccb685861", "userAId": "970b1608-3bd6-4805-babb-af32ae75266b", "userBId": "48ae8ef0-6301-11ee-a22d-169ccb685861", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a", "createdAt": "2022-01-29T15:50:56Z", "updatedAt": "2022-03-14T23:08:16Z" },
+	"rivalry10": { "id": "484ad472-6301-11ee-a22d-169ccb685861", "userAId": "ee3fe840-7645-4a77-b4f6-763bc30e07ee", "userBId": "0ad18812-b18e-41af-8331-d46bd18686e2", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a", "createdAt": "2022-01-30T22:25:26Z", "updatedAt": "2022-03-21T04:05:02Z" },
+	"rivalry11": { "id": "484ad50b-6301-11ee-a22d-169ccb685861", "userAId": "9d658b9a-bc56-42db-8686-8dde85dec832", "userBId": "970b1608-3bd6-4805-babb-af32ae75266b", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a", "createdAt": "2022-01-31T21:53:15Z", "updatedAt": "2022-03-14T23:24:15Z" },
+	"rivalry12": { "id": "484ad5a4-6301-11ee-a22d-169ccb685861", "userAId": "48ae90cb-6301-11ee-a22d-169ccb685861", "userBId": "48ae9160-6301-11ee-a22d-169ccb685861", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a", "createdAt": "2022-02-01T19:34:03Z", "updatedAt": "2022-02-04T16:25:25Z", "deletedAt": "2022-02-04T16:25:25Z" },
+	"rivalry13": { "id": "484ad63c-6301-11ee-a22d-169ccb685861", "userAId": "3f539aff-9c94-4d69-926a-8eab083aa39f", "userBId": "48ae90cb-6301-11ee-a22d-169ccb685861", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a", "createdAt": "2022-02-01T20:09:11Z", "updatedAt": "2022-02-04T16:24:02Z", "deletedAt": "2022-02-04T16:24:02Z" },
+	"rivalry14": { "id": "484ad6d4-6301-11ee-a22d-169ccb685861", "userAId": "e674198e-0416-427f-8295-3cd4d584acc8", "userBId": "683f0f4a-7968-44b8-80d7-0ef4495822f9", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a", "createdAt": "2022-02-03T04:20:12Z", "updatedAt": "2023-05-03T18:04:15Z" },
+	"rivalry15": { "id": "484ad771-6301-11ee-a22d-169ccb685861", "userAId": "48ae9456-6301-11ee-a22d-169ccb685861", "userBId": "683f0f4a-7968-44b8-80d7-0ef4495822f9", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a", "createdAt": "2022-02-03T17:42:59Z", "updatedAt": "2022-02-05T15:29:12Z" },
+	"rivalry16": { "id": "484ad805-6301-11ee-a22d-169ccb685861", "userAId": "0ad18812-b18e-41af-8331-d46bd18686e2", "userBId": "3f539aff-9c94-4d69-926a-8eab083aa39f", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a", "createdAt": "2022-02-06T02:06:43Z", "updatedAt": "2022-02-06T02:08:12Z", "deletedAt": "2022-02-06T02:08:12Z" },
+	"rivalry17": { "id": "484ad89b-6301-11ee-a22d-169ccb685861", "userAId": "3f539aff-9c94-4d69-926a-8eab083aa39f", "userBId": "0ad18812-b18e-41af-8331-d46bd18686e2", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a", "createdAt": "2022-02-06T02:08:44Z", "updatedAt": "2023-09-30T22:07:36Z" },
+	"rivalry18": { "id": "484ad938-6301-11ee-a22d-169ccb685861", "userAId": "ed81f2f9-5e95-43fb-b2c8-62673eb266b1", "userBId": "cc0849eb-2875-4baa-bbd1-48cbba8ee471", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a", "createdAt": "2022-02-07T00:15:59Z", "updatedAt": "2022-06-11T15:55:38Z" },
+	"rivalry19": { "id": "484ad9cd-6301-11ee-a22d-169ccb685861", "userAId": "48ae9586-6301-11ee-a22d-169ccb685861", "userBId": "ee3fe840-7645-4a77-b4f6-763bc30e07ee", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a", "createdAt": "2022-02-09T01:38:30Z", "updatedAt": "2022-02-09T02:00:04Z" },
+	"rivalry20": { "id": "484ada64-6301-11ee-a22d-169ccb685861", "userAId": "1bbdd3b7-8614-4fc5-9645-50ae6072932f", "userBId": "cc0849eb-2875-4baa-bbd1-48cbba8ee471", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a", "createdAt": "2022-02-22T01:44:09Z", "updatedAt": "2022-06-11T00:14:55Z" },
+	"rivalry21": { "id": "484adaf9-6301-11ee-a22d-169ccb685861", "userAId": "683f0f4a-7968-44b8-80d7-0ef4495822f9", "userBId": "48ae9586-6301-11ee-a22d-169ccb685861", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a", "createdAt": "2022-03-06T20:37:34Z", "updatedAt": "2022-05-30T18:24:47Z", "deletedAt": "2022-05-30T18:24:47Z" },
+	"rivalry22": { "id": "484adb90-6301-11ee-a22d-169ccb685861", "userAId": "683f0f4a-7968-44b8-80d7-0ef4495822f9", "userBId": "ee3fe840-7645-4a77-b4f6-763bc30e07ee", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a", "createdAt": "2022-03-06T20:37:49Z", "updatedAt": "2022-05-30T18:25:01Z", "deletedAt": "2022-05-30T18:25:02Z" },
+	"rivalry23": { "id": "484adc2a-6301-11ee-a22d-169ccb685861", "userAId": "48ae8e59-6301-11ee-a22d-169ccb685861", "userBId": "ee3fe840-7645-4a77-b4f6-763bc30e07ee", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a", "createdAt": "2022-04-09T21:26:38Z", "updatedAt": "2022-04-09T21:44:59Z" },
+	"rivalry24": { "id": "484adcbe-6301-11ee-a22d-169ccb685861", "userAId": "5a4dca28-79b6-48f0-8fa4-6731db145409", "userBId": "3f539aff-9c94-4d69-926a-8eab083aa39f", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a", "createdAt": "2022-04-27T21:29:12Z", "updatedAt": "2022-06-23T16:55:58Z" },
+	"rivalry25": { "id": "484add53-6301-11ee-a22d-169ccb685861", "userAId": "cc0849eb-2875-4baa-bbd1-48cbba8ee471", "userBId": "48aea4b5-6301-11ee-a22d-169ccb685861", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a", "createdAt": "2022-05-04T06:20:21Z", "updatedAt": "2022-05-05T03:44:22Z" },
+	"rivalry26": { "id": "484adde9-6301-11ee-a22d-169ccb685861", "userAId": "48aea780-6301-11ee-a22d-169ccb685861", "userBId": "cc0849eb-2875-4baa-bbd1-48cbba8ee471", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a", "createdAt": "2022-05-05T02:42:54Z", "updatedAt": "2022-05-05T03:35:44Z" },
+	"rivalry27": { "id": "484ade7c-6301-11ee-a22d-169ccb685861", "userAId": "48aea4b5-6301-11ee-a22d-169ccb685861", "userBId": "48aea780-6301-11ee-a22d-169ccb685861", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a", "createdAt": "2022-05-05T02:54:05Z", "updatedAt": "2022-05-05T03:40:53Z" },
+	"rivalry28": { "id": "484adf0f-6301-11ee-a22d-169ccb685861", "userAId": "48aea80d-6301-11ee-a22d-169ccb685861", "userBId": "cc0849eb-2875-4baa-bbd1-48cbba8ee471", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a", "createdAt": "2022-05-05T21:37:12Z", "updatedAt": "2022-05-05T21:50:17Z" },
+	"rivalry29": { "id": "484adfa5-6301-11ee-a22d-169ccb685861", "userAId": "3f539aff-9c94-4d69-926a-8eab083aa39f", "userBId": "ed81f2f9-5e95-43fb-b2c8-62673eb266b1", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a", "createdAt": "2022-07-10T15:31:05Z", "updatedAt": "2022-07-23T15:40:41Z" },
+	"rivalry30": { "id": "484ae037-6301-11ee-a22d-169ccb685861", "userAId": "48af2228-6301-11ee-a22d-169ccb685861", "userBId": "970b1608-3bd6-4805-babb-af32ae75266b", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a", "createdAt": "2022-07-29T22:25:47Z", "updatedAt": "2022-07-30T12:47:05Z" },
+	"rivalry31": { "id": "484ae0cb-6301-11ee-a22d-169ccb685861", "userAId": "3f539aff-9c94-4d69-926a-8eab083aa39f", "userBId": "48ae8e59-6301-11ee-a22d-169ccb685861", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a", "createdAt": "2022-08-01T22:39:15Z", "updatedAt": "2022-08-01T22:39:15Z" },
+	"rivalry32": { "id": "484ae167-6301-11ee-a22d-169ccb685861", "userAId": "ab384357-258d-4cce-815c-02ca07eb2c44", "userBId": "3f539aff-9c94-4d69-926a-8eab083aa39f", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a", "createdAt": "2022-08-22T18:42:36Z", "updatedAt": "2022-08-22T19:18:36Z" },
+	"rivalry33": { "id": "484ae203-6301-11ee-a22d-169ccb685861", "userAId": "fd042f02-cbb1-42cb-ab11-a4e63f6227d2", "userBId": "3f539aff-9c94-4d69-926a-8eab083aa39f", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a", "createdAt": "2022-09-06T15:36:02Z", "updatedAt": "2022-09-13T19:05:05Z" },
+	"rivalry34": { "id": "484ae2ac-6301-11ee-a22d-169ccb685861", "userAId": "48af32d5-6301-11ee-a22d-169ccb685861", "userBId": "48af336e-6301-11ee-a22d-169ccb685861", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a", "createdAt": "2022-09-22T00:07:34Z", "updatedAt": "2022-09-22T00:16:04Z" },
+	"rivalry35": { "id": "484ae344-6301-11ee-a22d-169ccb685861", "userAId": "1a47499b-0288-4515-9ec6-2a3265bc700a", "userBId": "3f539aff-9c94-4d69-926a-8eab083aa39f", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a", "createdAt": "2023-01-18T03:04:29Z", "updatedAt": "2023-01-18T04:50:34Z" },
+	"rivalry36": { "id": "484ae3dc-6301-11ee-a22d-169ccb685861", "userAId": "1bcfd495-f6fe-43e7-86db-345ae62dfc2f", "userBId": "cc0849eb-2875-4baa-bbd1-48cbba8ee471", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a", "createdAt": "2023-02-19T00:45:44Z", "updatedAt": "2023-02-21T22:50:46Z" },
+	"rivalry37": { "id": "484ae474-6301-11ee-a22d-169ccb685861", "userAId": "1bcfd495-f6fe-43e7-86db-345ae62dfc2f", "userBId": "0ad18812-b18e-41af-8331-d46bd18686e2", "gameId": "73ed69cf-2775-43d6-bece-aed10da3e25a", "createdAt": "2023-02-19T01:01:39Z", "updatedAt": "2023-02-19T01:30:39Z" }
+}

@@ -322,17 +322,17 @@ export const listUsers = /* GraphQL */ `query ListUsers(
   }
 }
 ` as GeneratedQuery<APITypes.ListUsersQueryVariables, APITypes.ListUsersQuery>;
-export const contestsByRivalryIdAndId = /* GraphQL */ `query ContestsByRivalryIdAndId(
+export const contestsByRivalryIdAndCreatedAt = /* GraphQL */ `query ContestsByRivalryIdAndCreatedAt(
   $rivalryId: ID!
-  $id: ModelIDKeyConditionInput
+  $createdAt: ModelStringKeyConditionInput
   $sortDirection: ModelSortDirection
   $filter: ModelContestFilterInput
   $limit: Int
   $nextToken: String
 ) {
-  contestsByRivalryIdAndId(
+  contestsByRivalryIdAndCreatedAt(
     rivalryId: $rivalryId
-    id: $id
+    createdAt: $createdAt
     sortDirection: $sortDirection
     filter: $filter
     limit: $limit
@@ -355,92 +355,20 @@ export const contestsByRivalryIdAndId = /* GraphQL */ `query ContestsByRivalryId
   }
 }
 ` as GeneratedQuery<
-  APITypes.ContestsByRivalryIdAndIdQueryVariables,
-  APITypes.ContestsByRivalryIdAndIdQuery
+  APITypes.ContestsByRivalryIdAndCreatedAtQueryVariables,
+  APITypes.ContestsByRivalryIdAndCreatedAtQuery
 >;
-export const contestsByTierSlotAIdAndId = /* GraphQL */ `query ContestsByTierSlotAIdAndId(
-  $tierSlotAId: ID!
-  $id: ModelIDKeyConditionInput
-  $sortDirection: ModelSortDirection
-  $filter: ModelContestFilterInput
-  $limit: Int
-  $nextToken: String
-) {
-  contestsByTierSlotAIdAndId(
-    tierSlotAId: $tierSlotAId
-    id: $id
-    sortDirection: $sortDirection
-    filter: $filter
-    limit: $limit
-    nextToken: $nextToken
-  ) {
-    items {
-      id
-      rivalryId
-      tierSlotAId
-      tierSlotBId
-      result
-      bias
-      createdAt
-      updatedAt
-      deletedAt
-      __typename
-    }
-    nextToken
-    __typename
-  }
-}
-` as GeneratedQuery<
-  APITypes.ContestsByTierSlotAIdAndIdQueryVariables,
-  APITypes.ContestsByTierSlotAIdAndIdQuery
->;
-export const contestsByTierSlotBIdAndId = /* GraphQL */ `query ContestsByTierSlotBIdAndId(
-  $tierSlotBId: ID!
-  $id: ModelIDKeyConditionInput
-  $sortDirection: ModelSortDirection
-  $filter: ModelContestFilterInput
-  $limit: Int
-  $nextToken: String
-) {
-  contestsByTierSlotBIdAndId(
-    tierSlotBId: $tierSlotBId
-    id: $id
-    sortDirection: $sortDirection
-    filter: $filter
-    limit: $limit
-    nextToken: $nextToken
-  ) {
-    items {
-      id
-      rivalryId
-      tierSlotAId
-      tierSlotBId
-      result
-      bias
-      createdAt
-      updatedAt
-      deletedAt
-      __typename
-    }
-    nextToken
-    __typename
-  }
-}
-` as GeneratedQuery<
-  APITypes.ContestsByTierSlotBIdAndIdQueryVariables,
-  APITypes.ContestsByTierSlotBIdAndIdQuery
->;
-export const fightersByGameIdAndId = /* GraphQL */ `query FightersByGameIdAndId(
+export const fightersByGameIdAndGamePositionAndName = /* GraphQL */ `query FightersByGameIdAndGamePositionAndName(
   $gameId: ID!
-  $id: ModelIDKeyConditionInput
+  $gamePositionName: ModelFighterByGameCompositeKeyConditionInput
   $sortDirection: ModelSortDirection
   $filter: ModelFighterFilterInput
   $limit: Int
   $nextToken: String
 ) {
-  fightersByGameIdAndId(
+  fightersByGameIdAndGamePositionAndName(
     gameId: $gameId
-    id: $id
+    gamePositionName: $gamePositionName
     sortDirection: $sortDirection
     filter: $filter
     limit: $limit
@@ -460,20 +388,20 @@ export const fightersByGameIdAndId = /* GraphQL */ `query FightersByGameIdAndId(
   }
 }
 ` as GeneratedQuery<
-  APITypes.FightersByGameIdAndIdQueryVariables,
-  APITypes.FightersByGameIdAndIdQuery
+  APITypes.FightersByGameIdAndGamePositionAndNameQueryVariables,
+  APITypes.FightersByGameIdAndGamePositionAndNameQuery
 >;
-export const rivalriesByUserAIdAndId = /* GraphQL */ `query RivalriesByUserAIdAndId(
+export const rivalriesByUserAIdAndUpdatedAt = /* GraphQL */ `query RivalriesByUserAIdAndUpdatedAt(
   $userAId: ID!
-  $id: ModelIDKeyConditionInput
+  $updatedAt: ModelStringKeyConditionInput
   $sortDirection: ModelSortDirection
   $filter: ModelRivalryFilterInput
   $limit: Int
   $nextToken: String
 ) {
-  rivalriesByUserAIdAndId(
+  rivalriesByUserAIdAndUpdatedAt(
     userAId: $userAId
-    id: $id
+    updatedAt: $updatedAt
     sortDirection: $sortDirection
     filter: $filter
     limit: $limit
@@ -494,20 +422,20 @@ export const rivalriesByUserAIdAndId = /* GraphQL */ `query RivalriesByUserAIdAn
   }
 }
 ` as GeneratedQuery<
-  APITypes.RivalriesByUserAIdAndIdQueryVariables,
-  APITypes.RivalriesByUserAIdAndIdQuery
+  APITypes.RivalriesByUserAIdAndUpdatedAtQueryVariables,
+  APITypes.RivalriesByUserAIdAndUpdatedAtQuery
 >;
-export const rivalriesByUserBIdAndId = /* GraphQL */ `query RivalriesByUserBIdAndId(
+export const rivalriesByUserBIdAndUpdatedAt = /* GraphQL */ `query RivalriesByUserBIdAndUpdatedAt(
   $userBId: ID!
-  $id: ModelIDKeyConditionInput
+  $updatedAt: ModelStringKeyConditionInput
   $sortDirection: ModelSortDirection
   $filter: ModelRivalryFilterInput
   $limit: Int
   $nextToken: String
 ) {
-  rivalriesByUserBIdAndId(
+  rivalriesByUserBIdAndUpdatedAt(
     userBId: $userBId
-    id: $id
+    updatedAt: $updatedAt
     sortDirection: $sortDirection
     filter: $filter
     limit: $limit
@@ -528,20 +456,20 @@ export const rivalriesByUserBIdAndId = /* GraphQL */ `query RivalriesByUserBIdAn
   }
 }
 ` as GeneratedQuery<
-  APITypes.RivalriesByUserBIdAndIdQueryVariables,
-  APITypes.RivalriesByUserBIdAndIdQuery
+  APITypes.RivalriesByUserBIdAndUpdatedAtQueryVariables,
+  APITypes.RivalriesByUserBIdAndUpdatedAtQuery
 >;
-export const rivalriesByGameIdAndId = /* GraphQL */ `query RivalriesByGameIdAndId(
+export const rivalriesByGameIdAndUpdatedAt = /* GraphQL */ `query RivalriesByGameIdAndUpdatedAt(
   $gameId: ID!
-  $id: ModelIDKeyConditionInput
+  $updatedAt: ModelStringKeyConditionInput
   $sortDirection: ModelSortDirection
   $filter: ModelRivalryFilterInput
   $limit: Int
   $nextToken: String
 ) {
-  rivalriesByGameIdAndId(
+  rivalriesByGameIdAndUpdatedAt(
     gameId: $gameId
-    id: $id
+    updatedAt: $updatedAt
     sortDirection: $sortDirection
     filter: $filter
     limit: $limit
@@ -562,20 +490,20 @@ export const rivalriesByGameIdAndId = /* GraphQL */ `query RivalriesByGameIdAndI
   }
 }
 ` as GeneratedQuery<
-  APITypes.RivalriesByGameIdAndIdQueryVariables,
-  APITypes.RivalriesByGameIdAndIdQuery
+  APITypes.RivalriesByGameIdAndUpdatedAtQueryVariables,
+  APITypes.RivalriesByGameIdAndUpdatedAtQuery
 >;
-export const tierListsByRivalryIdAndId = /* GraphQL */ `query TierListsByRivalryIdAndId(
+export const tierListsByRivalryIdAndCreatedAt = /* GraphQL */ `query TierListsByRivalryIdAndCreatedAt(
   $rivalryId: ID!
-  $id: ModelIDKeyConditionInput
+  $createdAt: ModelStringKeyConditionInput
   $sortDirection: ModelSortDirection
   $filter: ModelTierListFilterInput
   $limit: Int
   $nextToken: String
 ) {
-  tierListsByRivalryIdAndId(
+  tierListsByRivalryIdAndCreatedAt(
     rivalryId: $rivalryId
-    id: $id
+    createdAt: $createdAt
     sortDirection: $sortDirection
     filter: $filter
     limit: $limit
@@ -596,20 +524,20 @@ export const tierListsByRivalryIdAndId = /* GraphQL */ `query TierListsByRivalry
   }
 }
 ` as GeneratedQuery<
-  APITypes.TierListsByRivalryIdAndIdQueryVariables,
-  APITypes.TierListsByRivalryIdAndIdQuery
+  APITypes.TierListsByRivalryIdAndCreatedAtQueryVariables,
+  APITypes.TierListsByRivalryIdAndCreatedAtQuery
 >;
-export const tierListsByUserIdAndId = /* GraphQL */ `query TierListsByUserIdAndId(
+export const tierListsByUserIdAndCreatedAt = /* GraphQL */ `query TierListsByUserIdAndCreatedAt(
   $userId: ID!
-  $id: ModelIDKeyConditionInput
+  $createdAt: ModelStringKeyConditionInput
   $sortDirection: ModelSortDirection
   $filter: ModelTierListFilterInput
   $limit: Int
   $nextToken: String
 ) {
-  tierListsByUserIdAndId(
+  tierListsByUserIdAndCreatedAt(
     userId: $userId
-    id: $id
+    createdAt: $createdAt
     sortDirection: $sortDirection
     filter: $filter
     limit: $limit
@@ -630,20 +558,20 @@ export const tierListsByUserIdAndId = /* GraphQL */ `query TierListsByUserIdAndI
   }
 }
 ` as GeneratedQuery<
-  APITypes.TierListsByUserIdAndIdQueryVariables,
-  APITypes.TierListsByUserIdAndIdQuery
+  APITypes.TierListsByUserIdAndCreatedAtQueryVariables,
+  APITypes.TierListsByUserIdAndCreatedAtQuery
 >;
-export const tierSlotsByTierListIdAndId = /* GraphQL */ `query TierSlotsByTierListIdAndId(
+export const tierSlotsByTierListIdAndPosition = /* GraphQL */ `query TierSlotsByTierListIdAndPosition(
   $tierListId: ID!
-  $id: ModelIDKeyConditionInput
+  $position: ModelIntKeyConditionInput
   $sortDirection: ModelSortDirection
   $filter: ModelTierSlotFilterInput
   $limit: Int
   $nextToken: String
 ) {
-  tierSlotsByTierListIdAndId(
+  tierSlotsByTierListIdAndPosition(
     tierListId: $tierListId
-    id: $id
+    position: $position
     sortDirection: $sortDirection
     filter: $filter
     limit: $limit
@@ -664,20 +592,20 @@ export const tierSlotsByTierListIdAndId = /* GraphQL */ `query TierSlotsByTierLi
   }
 }
 ` as GeneratedQuery<
-  APITypes.TierSlotsByTierListIdAndIdQueryVariables,
-  APITypes.TierSlotsByTierListIdAndIdQuery
+  APITypes.TierSlotsByTierListIdAndPositionQueryVariables,
+  APITypes.TierSlotsByTierListIdAndPositionQuery
 >;
-export const tierSlotsByFighterIdAndId = /* GraphQL */ `query TierSlotsByFighterIdAndId(
+export const tierSlotsByFighterIdAndPosition = /* GraphQL */ `query TierSlotsByFighterIdAndPosition(
   $fighterId: ID!
-  $id: ModelIDKeyConditionInput
+  $position: ModelIntKeyConditionInput
   $sortDirection: ModelSortDirection
   $filter: ModelTierSlotFilterInput
   $limit: Int
   $nextToken: String
 ) {
-  tierSlotsByFighterIdAndId(
+  tierSlotsByFighterIdAndPosition(
     fighterId: $fighterId
-    id: $id
+    position: $position
     sortDirection: $sortDirection
     filter: $filter
     limit: $limit
@@ -698,8 +626,8 @@ export const tierSlotsByFighterIdAndId = /* GraphQL */ `query TierSlotsByFighter
   }
 }
 ` as GeneratedQuery<
-  APITypes.TierSlotsByFighterIdAndIdQueryVariables,
-  APITypes.TierSlotsByFighterIdAndIdQuery
+  APITypes.TierSlotsByFighterIdAndPositionQueryVariables,
+  APITypes.TierSlotsByFighterIdAndPositionQuery
 >;
 export const usersByAwsSub = /* GraphQL */ `query UsersByAwsSub(
   $awsSub: String!

@@ -552,7 +552,7 @@ export type ModelUserConnection = {
   nextToken?: string | null,
 };
 
-export type ModelIDKeyConditionInput = {
+export type ModelStringKeyConditionInput = {
   eq?: string | null,
   le?: string | null,
   lt?: string | null,
@@ -560,6 +560,30 @@ export type ModelIDKeyConditionInput = {
   gt?: string | null,
   between?: Array< string | null > | null,
   beginsWith?: string | null,
+};
+
+export type ModelFighterByGameCompositeKeyConditionInput = {
+  eq?: ModelFighterByGameCompositeKeyInput | null,
+  le?: ModelFighterByGameCompositeKeyInput | null,
+  lt?: ModelFighterByGameCompositeKeyInput | null,
+  ge?: ModelFighterByGameCompositeKeyInput | null,
+  gt?: ModelFighterByGameCompositeKeyInput | null,
+  between?: Array< ModelFighterByGameCompositeKeyInput | null > | null,
+  beginsWith?: ModelFighterByGameCompositeKeyInput | null,
+};
+
+export type ModelFighterByGameCompositeKeyInput = {
+  gamePosition?: number | null,
+  name?: string | null,
+};
+
+export type ModelIntKeyConditionInput = {
+  eq?: number | null,
+  le?: number | null,
+  lt?: number | null,
+  ge?: number | null,
+  gt?: number | null,
+  between?: Array< number | null > | null,
 };
 
 export type ModelSubscriptionContestFilterInput = {
@@ -1517,17 +1541,17 @@ export type ListUsersQuery = {
   } | null,
 };
 
-export type ContestsByRivalryIdAndIdQueryVariables = {
+export type ContestsByRivalryIdAndCreatedAtQueryVariables = {
   rivalryId: string,
-  id?: ModelIDKeyConditionInput | null,
+  createdAt?: ModelStringKeyConditionInput | null,
   sortDirection?: ModelSortDirection | null,
   filter?: ModelContestFilterInput | null,
   limit?: number | null,
   nextToken?: string | null,
 };
 
-export type ContestsByRivalryIdAndIdQuery = {
-  contestsByRivalryIdAndId?:  {
+export type ContestsByRivalryIdAndCreatedAtQuery = {
+  contestsByRivalryIdAndCreatedAt?:  {
     __typename: "ModelContestConnection",
     items:  Array< {
       __typename: "Contest",
@@ -1545,73 +1569,17 @@ export type ContestsByRivalryIdAndIdQuery = {
   } | null,
 };
 
-export type ContestsByTierSlotAIdAndIdQueryVariables = {
-  tierSlotAId: string,
-  id?: ModelIDKeyConditionInput | null,
-  sortDirection?: ModelSortDirection | null,
-  filter?: ModelContestFilterInput | null,
-  limit?: number | null,
-  nextToken?: string | null,
-};
-
-export type ContestsByTierSlotAIdAndIdQuery = {
-  contestsByTierSlotAIdAndId?:  {
-    __typename: "ModelContestConnection",
-    items:  Array< {
-      __typename: "Contest",
-      id: string,
-      rivalryId: string,
-      tierSlotAId: string,
-      tierSlotBId: string,
-      result?: number | null,
-      bias?: number | null,
-      createdAt: string,
-      updatedAt: string,
-      deletedAt?: string | null,
-    } | null >,
-    nextToken?: string | null,
-  } | null,
-};
-
-export type ContestsByTierSlotBIdAndIdQueryVariables = {
-  tierSlotBId: string,
-  id?: ModelIDKeyConditionInput | null,
-  sortDirection?: ModelSortDirection | null,
-  filter?: ModelContestFilterInput | null,
-  limit?: number | null,
-  nextToken?: string | null,
-};
-
-export type ContestsByTierSlotBIdAndIdQuery = {
-  contestsByTierSlotBIdAndId?:  {
-    __typename: "ModelContestConnection",
-    items:  Array< {
-      __typename: "Contest",
-      id: string,
-      rivalryId: string,
-      tierSlotAId: string,
-      tierSlotBId: string,
-      result?: number | null,
-      bias?: number | null,
-      createdAt: string,
-      updatedAt: string,
-      deletedAt?: string | null,
-    } | null >,
-    nextToken?: string | null,
-  } | null,
-};
-
-export type FightersByGameIdAndIdQueryVariables = {
+export type FightersByGameIdAndGamePositionAndNameQueryVariables = {
   gameId: string,
-  id?: ModelIDKeyConditionInput | null,
+  gamePositionName?: ModelFighterByGameCompositeKeyConditionInput | null,
   sortDirection?: ModelSortDirection | null,
   filter?: ModelFighterFilterInput | null,
   limit?: number | null,
   nextToken?: string | null,
 };
 
-export type FightersByGameIdAndIdQuery = {
-  fightersByGameIdAndId?:  {
+export type FightersByGameIdAndGamePositionAndNameQuery = {
+  fightersByGameIdAndGamePositionAndName?:  {
     __typename: "ModelFighterConnection",
     items:  Array< {
       __typename: "Fighter",
@@ -1626,17 +1594,17 @@ export type FightersByGameIdAndIdQuery = {
   } | null,
 };
 
-export type RivalriesByUserAIdAndIdQueryVariables = {
+export type RivalriesByUserAIdAndUpdatedAtQueryVariables = {
   userAId: string,
-  id?: ModelIDKeyConditionInput | null,
+  updatedAt?: ModelStringKeyConditionInput | null,
   sortDirection?: ModelSortDirection | null,
   filter?: ModelRivalryFilterInput | null,
   limit?: number | null,
   nextToken?: string | null,
 };
 
-export type RivalriesByUserAIdAndIdQuery = {
-  rivalriesByUserAIdAndId?:  {
+export type RivalriesByUserAIdAndUpdatedAtQuery = {
+  rivalriesByUserAIdAndUpdatedAt?:  {
     __typename: "ModelRivalryConnection",
     items:  Array< {
       __typename: "Rivalry",
@@ -1652,17 +1620,17 @@ export type RivalriesByUserAIdAndIdQuery = {
   } | null,
 };
 
-export type RivalriesByUserBIdAndIdQueryVariables = {
+export type RivalriesByUserBIdAndUpdatedAtQueryVariables = {
   userBId: string,
-  id?: ModelIDKeyConditionInput | null,
+  updatedAt?: ModelStringKeyConditionInput | null,
   sortDirection?: ModelSortDirection | null,
   filter?: ModelRivalryFilterInput | null,
   limit?: number | null,
   nextToken?: string | null,
 };
 
-export type RivalriesByUserBIdAndIdQuery = {
-  rivalriesByUserBIdAndId?:  {
+export type RivalriesByUserBIdAndUpdatedAtQuery = {
+  rivalriesByUserBIdAndUpdatedAt?:  {
     __typename: "ModelRivalryConnection",
     items:  Array< {
       __typename: "Rivalry",
@@ -1678,17 +1646,17 @@ export type RivalriesByUserBIdAndIdQuery = {
   } | null,
 };
 
-export type RivalriesByGameIdAndIdQueryVariables = {
+export type RivalriesByGameIdAndUpdatedAtQueryVariables = {
   gameId: string,
-  id?: ModelIDKeyConditionInput | null,
+  updatedAt?: ModelStringKeyConditionInput | null,
   sortDirection?: ModelSortDirection | null,
   filter?: ModelRivalryFilterInput | null,
   limit?: number | null,
   nextToken?: string | null,
 };
 
-export type RivalriesByGameIdAndIdQuery = {
-  rivalriesByGameIdAndId?:  {
+export type RivalriesByGameIdAndUpdatedAtQuery = {
+  rivalriesByGameIdAndUpdatedAt?:  {
     __typename: "ModelRivalryConnection",
     items:  Array< {
       __typename: "Rivalry",
@@ -1704,17 +1672,17 @@ export type RivalriesByGameIdAndIdQuery = {
   } | null,
 };
 
-export type TierListsByRivalryIdAndIdQueryVariables = {
+export type TierListsByRivalryIdAndCreatedAtQueryVariables = {
   rivalryId: string,
-  id?: ModelIDKeyConditionInput | null,
+  createdAt?: ModelStringKeyConditionInput | null,
   sortDirection?: ModelSortDirection | null,
   filter?: ModelTierListFilterInput | null,
   limit?: number | null,
   nextToken?: string | null,
 };
 
-export type TierListsByRivalryIdAndIdQuery = {
-  tierListsByRivalryIdAndId?:  {
+export type TierListsByRivalryIdAndCreatedAtQuery = {
+  tierListsByRivalryIdAndCreatedAt?:  {
     __typename: "ModelTierListConnection",
     items:  Array< {
       __typename: "TierList",
@@ -1730,17 +1698,17 @@ export type TierListsByRivalryIdAndIdQuery = {
   } | null,
 };
 
-export type TierListsByUserIdAndIdQueryVariables = {
+export type TierListsByUserIdAndCreatedAtQueryVariables = {
   userId: string,
-  id?: ModelIDKeyConditionInput | null,
+  createdAt?: ModelStringKeyConditionInput | null,
   sortDirection?: ModelSortDirection | null,
   filter?: ModelTierListFilterInput | null,
   limit?: number | null,
   nextToken?: string | null,
 };
 
-export type TierListsByUserIdAndIdQuery = {
-  tierListsByUserIdAndId?:  {
+export type TierListsByUserIdAndCreatedAtQuery = {
+  tierListsByUserIdAndCreatedAt?:  {
     __typename: "ModelTierListConnection",
     items:  Array< {
       __typename: "TierList",
@@ -1756,17 +1724,17 @@ export type TierListsByUserIdAndIdQuery = {
   } | null,
 };
 
-export type TierSlotsByTierListIdAndIdQueryVariables = {
+export type TierSlotsByTierListIdAndPositionQueryVariables = {
   tierListId: string,
-  id?: ModelIDKeyConditionInput | null,
+  position?: ModelIntKeyConditionInput | null,
   sortDirection?: ModelSortDirection | null,
   filter?: ModelTierSlotFilterInput | null,
   limit?: number | null,
   nextToken?: string | null,
 };
 
-export type TierSlotsByTierListIdAndIdQuery = {
-  tierSlotsByTierListIdAndId?:  {
+export type TierSlotsByTierListIdAndPositionQuery = {
+  tierSlotsByTierListIdAndPosition?:  {
     __typename: "ModelTierSlotConnection",
     items:  Array< {
       __typename: "TierSlot",
@@ -1782,17 +1750,17 @@ export type TierSlotsByTierListIdAndIdQuery = {
   } | null,
 };
 
-export type TierSlotsByFighterIdAndIdQueryVariables = {
+export type TierSlotsByFighterIdAndPositionQueryVariables = {
   fighterId: string,
-  id?: ModelIDKeyConditionInput | null,
+  position?: ModelIntKeyConditionInput | null,
   sortDirection?: ModelSortDirection | null,
   filter?: ModelTierSlotFilterInput | null,
   limit?: number | null,
   nextToken?: string | null,
 };
 
-export type TierSlotsByFighterIdAndIdQuery = {
-  tierSlotsByFighterIdAndId?:  {
+export type TierSlotsByFighterIdAndPositionQuery = {
+  tierSlotsByFighterIdAndPosition?:  {
     __typename: "ModelTierSlotConnection",
     items:  Array< {
       __typename: "TierSlot",
