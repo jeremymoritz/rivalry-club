@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import type { PropsWithChildren } from 'react';
 import {
-  Button,
   SafeAreaView,
   ScrollView,
   StatusBar,
@@ -10,6 +9,7 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
+import { Button } from 'react-native-paper';
 
 import {
   Colors,
@@ -25,6 +25,9 @@ import { usersByAwsSub } from '../graphql/queries';
 import { API } from 'aws-amplify';
 import { GraphQLQuery } from '@aws-amplify/api';
 import { UsersByAwsSubQuery, User } from '../API';
+
+import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
+import { faMugSaucer } from '@fortawesome/free-solid-svg-icons/faMugSaucer';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -59,7 +62,11 @@ function Section({ children, title }: SectionProps): JSX.Element {
 function SignOutButton(): JSX.Element {
   const { signOut } = useAuthenticator();
 
-  return <Button title="Sign Out" onPress={signOut} />;
+  return (
+    <Button mode="contained" onPress={signOut}>
+      Sign Out
+    </Button>
+  );
 }
 
 function Access(): JSX.Element {
@@ -111,6 +118,8 @@ function Access(): JSX.Element {
           <SignOutButton />
           <Section title="Welcome">
             Welcome{user ? `, ${user.firstName}` : ''}!
+            <FontAwesomeIcon icon={faMugSaucer} />
+            <FontAwesomeIcon icon="square-check" />
           </Section>
           <Section title="See Your Changes">
             <ReloadInstructions />
