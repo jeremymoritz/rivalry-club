@@ -1,25 +1,15 @@
-/**
- * @format
- */
-
-import {AppRegistry} from 'react-native';
+import * as React from 'react';
+import { AppRegistry } from 'react-native';
+import { PaperProvider } from 'react-native-paper';
+import { name as appName } from './app.json';
 import App from './App';
-import {name as appName} from './app.json';
 
-// import {Amplify, Auth} from 'aws-amplify';
-// import awsconfig from './src/aws-exports';
-// Amplify.configure(awsconfig);
-// import {Authenticator, useAuthenticator} from '@aws-amplify/ui-react-native';
-// import Router from './src/components/router';
+export default function Main() {
+  return (
+    <PaperProvider>
+      <App />
+    </PaperProvider>
+  );
+}
 
-// export default function App() {
-//   return (
-//     <Authenticator.Provider>
-//       <Authenticator>
-//         <Router />
-//       </Authenticator>
-//     </Authenticator.Provider>
-//   );
-// }
-
-AppRegistry.registerComponent(appName, () => App);
+AppRegistry.registerComponent(appName, () => Main);

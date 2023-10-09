@@ -6,8 +6,8 @@ import awsConfig from './src/aws-exports';
 import Access from './src/components/access';
 import { ScrollView, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { Button } from '@aws-amplify/ui-react-native/dist/primitives';
 import { Authenticator } from '@aws-amplify/ui-react-native';
+import { Button } from 'react-native-paper';
 
 Amplify.configure(awsConfig);
 
@@ -25,7 +25,7 @@ function App(): JSX.Element {
       <ScrollView>
         <View>
           <Text>Rivalry Club is cool!</Text>
-          <Button onPress={() => setMoveOn(true)}>
+          <Button mode="contained" onPress={() => setMoveOn(true)}>
             Click here to continue
           </Button>
         </View>
