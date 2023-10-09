@@ -32,8 +32,9 @@ function App(): JSX.Element {
         <View>
           <Text>Rivalry Club is cool!</Text>
           <Button mode="contained" onPress={() => setMoveOn(true)}>
-            <FontAwesomeIcon icon="square-check" /> Click here to continue{' '}
-            <FontAwesomeIcon icon="stroopwafel" />
+            <FontAwesomeIcon icon="square-check" style={{ color: 'white' }} />{' '}
+            Click here to continue{' '}
+            <FontAwesomeIcon icon="stroopwafel" style={{ color: 'white' }} />
           </Button>
         </View>
       </ScrollView>
