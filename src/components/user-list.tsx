@@ -1,14 +1,15 @@
-import { Text, View } from 'react-native';
-import { API } from 'aws-amplify';
-import * as queries from '../graphql/queries';
-import * as customQueries from '../graphql/custom-queries';
 import { GraphQLQuery } from '@aws-amplify/api';
-import { ListUsersQuery, GetUserQuery, User } from '../API';
-import { useEffect, useState } from 'react';
+import { API } from 'aws-amplify';
+import { useEffect } from 'react';
+import { Text, View } from 'react-native';
+
+import { GetUserQuery, ListUsersQuery, User } from '../API';
 import { GetBasicUserQuery } from '../custom-api';
+import * as customQueries from '../graphql/custom-queries';
+import * as queries from '../graphql/queries';
 
 export default function UserList(): JSX.Element {
-  const [user, setUser] = useState<User | null | undefined>();
+  // const [user, setUser] = useState<User | null | undefined>();
 
   async function fetchData() {
     // Simple query
@@ -36,17 +37,13 @@ export default function UserList(): JSX.Element {
       const basicUser: User = oneBasicUserJson.data.getUser;
 
       console.warn({ basicUser });
-    } else {
-      console.warn('no basic user');
-    }
+    } else console.warn('no basic user');
 
     if (oneUserJson.data?.getUser) {
       const user: User = oneUserJson.data.getUser as User;
 
       console.warn({ user });
-    } else {
-      console.warn('no regular user');
-    }
+    } else console.warn('no regular user');
 
     console.warn({ allUsers });
     console.warn({ oneUserJson });

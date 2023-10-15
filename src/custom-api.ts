@@ -1,5 +1,4 @@
 /* tslint:disable */
-/* eslint-disable */
 
 export type GetBasicUserQuery = {
   getUser?: {

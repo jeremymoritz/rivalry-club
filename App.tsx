@@ -1,17 +1,14 @@
 /** Rivalry App */
 
-import React, { useState } from 'react';
+import { Authenticator } from '@aws-amplify/ui-react-native';
+import { library } from '@fortawesome/fontawesome-svg-core';
 import { Amplify } from 'aws-amplify';
+import React, { useState } from 'react';
+
+import { iconsInProject } from './src/assets/icons';
 import awsConfig from './src/aws-exports';
 import Access from './src/components/access';
-import { ScrollView, Text, View } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import { Authenticator } from '@aws-amplify/ui-react-native';
-import { Button } from 'react-native-paper'; // in App.js
-
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
-import { iconsInProject } from './src/assets/icons';
+import Home from './src/components/home';
 
 library.add(...iconsInProject);
 
@@ -27,18 +24,7 @@ function App(): JSX.Element {
       </Authenticator>
     </Authenticator.Provider>
   ) : (
-    <SafeAreaView>
-      <ScrollView>
-        <View>
-          <Text>Rivalry Club is cool!</Text>
-          <Button mode="contained" onPress={() => setMoveOn(true)}>
-            <FontAwesomeIcon icon="square-check" style={{ color: 'white' }} />{' '}
-            Click here to continue{' '}
-            <FontAwesomeIcon icon="stroopwafel" style={{ color: 'white' }} />
-          </Button>
-        </View>
-      </ScrollView>
-    </SafeAreaView>
+    <Home onMoveOnClick={() => setMoveOn(true)} />
   );
 }
 

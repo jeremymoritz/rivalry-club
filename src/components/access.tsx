@@ -1,5 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import { GraphQLQuery } from '@aws-amplify/api';
+import { useAuthenticator } from '@aws-amplify/ui-react-native';
+import { faMugSaucer } from '@fortawesome/free-solid-svg-icons/faMugSaucer';
+import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
+import { API } from 'aws-amplify';
 import type { PropsWithChildren } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   SafeAreaView,
   ScrollView,
@@ -9,8 +14,6 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
-import { Button } from 'react-native-paper';
-
 import {
   Colors,
   DebugInstructions,
@@ -18,16 +21,11 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import { Button } from 'react-native-paper';
 
+import { User, UsersByAwsSubQuery } from '../API';
 import UserList from '../components/user-list';
-import { useAuthenticator } from '@aws-amplify/ui-react-native';
 import { usersByAwsSub } from '../graphql/queries';
-import { API } from 'aws-amplify';
-import { GraphQLQuery } from '@aws-amplify/api';
-import { UsersByAwsSubQuery, User } from '../API';
-
-import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
-import { faMugSaucer } from '@fortawesome/free-solid-svg-icons/faMugSaucer';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -35,6 +33,7 @@ type SectionProps = PropsWithChildren<{
 
 function Section({ children, title }: SectionProps): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
+
   return (
     <View style={styles.sectionContainer}>
       <Text
