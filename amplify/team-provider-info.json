@@ -17,6 +17,9 @@
       },
       "api": {
         "rivalryclub": {}
+      },
+      "storage": {
+        "rivalryassets": {}
       }
     }
   }

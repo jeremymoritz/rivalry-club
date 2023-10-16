@@ -1,0 +1,14 @@
+{
+  "resourceName": "rivalryassets",
+  "policyUUID": "f30d37b4",
+  "bucketName": "rivalry-assets",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "READ"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}
